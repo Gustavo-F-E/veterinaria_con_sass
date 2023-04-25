@@ -1,0 +1,79 @@
+<header>
+  <nav>
+    <ul>
+      <li><a href="#">Link 1</a></li>
+      <li><a href="#">Link 2</a></li>
+      <li><a href="#">Link 3</a></li>
+    </ul>
+  </nav>
+</header>
+
+<style>
+header {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 0 10px;
+}
+
+@media only screen and (min-width: 768px) {
+  /* Estilos para pantallas grandes */
+  header {
+    position: static;
+    height: 100px; /* ajusta la altura según tus necesidades */
+  }
+
+  nav {
+    position: fixed;
+    top: 0;
+  }
+
+  ul {
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  /* Estilos para pantallas pequeñas */
+  header {
+    position: fixed;
+    bottom: 0;
+    height: 50px; /* ajusta la altura según tus necesidades */
+  }
+
+  nav {
+    position: static;
+  }
+
+  ul {
+    flex-direction: column;
+    order: 2;
+  }
+
+  li {
+    margin: 10px 0;
+  }
+}
+</style>

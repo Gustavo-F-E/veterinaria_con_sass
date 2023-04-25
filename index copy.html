@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Veterinaria AssistVet</title>
+        <link rel="stylesheet" href="css/index_copy.min.css" />
+        <link rel="icon" type="image/x-icon" href="assets/svg/footprint.svg" />
+        <meta
+            name="description"
+            content="Veterinaria AssistVet: Todo para tu mascota. Alimentos balanceados, atención médica, servicios de peluquería y mucho, mucho más!!!"
+        />
+        <link
+            rel="apple-touch-icon"
+            href="assets/images/navbar/logoasistvet.jpeg"
+        />
+        <meta name="theme-color" content="#0000ff" />
+        <link rel="canonical" href="http://127.0.0.1:5500/" />
+        <!--colocar direccion real cuando se haga el despliegue-->
+        <meta property="og:title" content="Veterinaria AssistVet" />
+        <meta
+            property="og:description"
+            content="Veterinaria AssistVet: Todo para tu mascota. Alimentos balanceados, atención médica, servicios de peluquería y mucho, mucho más!!!"
+        />
+        <meta
+            property="og:image"
+            content="assets/images/navbar/logoasistvet.jpeg"
+        />
+        <meta property="og:url" content="http://127.0.0.1:5500/" />
+        <!--colocar direccion real cuando se haga el despliegue-->
+        <style></style>
+    </head>
+    <body>
+        <header class="position">
+            <section>
+                <section>
+                    <div class="logo_y_telefono flex-column-centrado">
+                        <div>
+                            <img
+                                id="logo"
+                                src="assets/images/navbar/logoasistvet.jpeg"
+                                alt="veterinaria assisvet"
+                            />
+                        </div>
+                        <div class="div-telefono">
+                            <img
+                                id="telefono"
+                                fill="#fff"
+                                src="assets/svg/icons8-phone.svg"
+                                alt="telefono"
+                            />
+                            <span>02254-XXXXXX</span>
+                        </div>
+                    </div>
+                    <div>
+                        <div><h1>PETSHOP & ASSISTENCIA VETERINARIA</h1></div>
+                    </div>
+                </section>
+                <button class="menu-btn">
+                    <img
+                        src="assets/svg/hamburguer-menu.svg"
+                        alt="Abrir menú"
+                    />
+                    <img
+                        class="none"
+                        src="assets/svg/close-hamburguer-menu.svg"
+                        alt="cerrar menú"
+                    />
+                </button>
+                <div class="div-menu">
+                <nav class="menu">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <img
+                                        src="assets/svg/bx-cart.svg"
+                                        alt="productos"
+                                    />
+                                </div>
+                                <div>Productos</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" 
+                                ><div>
+                                    <img
+                                        src="assets/svg/servicios_inv_transparente 1.svg"
+                                        alt="productos"
+                                    />
+                                </div>
+                                <div>Servicios</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" 
+                                ><div>
+                                    <img
+                                        src="assets/svg/icons8-veterinarian-female-50 1.svg"
+                                        alt="productos"
+                                    />
+                                </div>
+                                <div>Nosotros</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" 
+                                ><div>
+                                    <img
+                                        src="assets/svg/icons8-location-50 1.svg"
+                                        alt="productos"
+                                    />
+                                </div>
+                                <div>Dónde estamos</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" 
+                                ><div>
+                                    <img
+                                        src="assets/svg/icons8-mail-48 1.svg"
+                                        alt="productos"
+                                    />
+                                </div>
+                                <div>Contacto</div>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                </div>
+            </section>
+        </header>
+        <section class="landing_page">
+            <video id="video" autoplay muted loop>
+                <source src="assets/videos/video.mp4" type="video/mp4" />
+            </video>
+        </section>
+        <main>
+            <section>
+                <h2>Quienes somos</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam tempore ea ratione incidunt! Maxime consequuntur sint labore maiores odio? Ipsam voluptates, accusantium obcaecati quaerat inventore voluptatum odio debitis tempora dolorem!</p>
+            </section>
+            <section>
+                <h2>Mapa del sitio</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam tempore ea ratione incidunt! Maxime consequuntur sint labore maiores odio? Ipsam voluptates, accusantium obcaecati quaerat inventore voluptatum odio debitis tempora dolorem!</p>
+            </section>
+        </main>
+        <footer>
+            <section>Contactenos: redes sociales</section>
+            <section>Copiright</section>
+            <section>Codo a codo</section>
+        </footer>
+        <script>
+            /* ********** Menu ********** */
+            ((d) => {
+                const $btnMenu = d.querySelector(".menu-btn"),
+                    $menu = d.querySelector(".menu");
+
+                $btnMenu.addEventListener("click", (e) => {
+                    $btnMenu.firstElementChild.classList.toggle("none");
+                    $btnMenu.lastElementChild.classList.toggle("none");
+                    $menu.classList.toggle("is-active");
+                });
+
+                d.addEventListener("click", (e) => {
+                    if (!e.target.matches(".menu a")) return false;
+
+                    $btnMenu.firstElementChild.classList.remove("none");
+                    $btnMenu.lastElementChild.classList.add("none");
+                    $menu.classList.remove("is-active");
+                });
+            })(document);
+        </script>
+        <script src="javascript/control_de_posicion.js"></script>
+    </body>
+</html>
