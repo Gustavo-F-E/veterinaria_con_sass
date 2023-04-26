@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+@use "c_resets/body";
+
+@use "d_layout/header";
+
+@use "d_layout/navigation";
+
+@use "d_layout/footer";
+
+@use "e_sections_and_articles/gatos_and_perros";
+
+@use "e_sections_and_articles/index_contacto";
+
+@use "e_sections_and_articles/index_donde_estamos";
+
+@use "e_sections_and_articles/index_ofertas";
+
+@use "e_sections_and_articles/index_seleccion_mascota";
+
+@use "e_sections_and_articles/servicios";
+
+@use "f_components/generate_by_javascript";
+
+@use "f_components/carousel";
+
+@use "g_transitions_and_animations/animations";
+
+@use "g_transitions_and_animations/transitions";
