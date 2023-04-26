@@ -304,37 +304,61 @@ ul {
 }
 footer {
   width: 100%;
-  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+footer section {
+  width: 100%;
+}
+footer section:first-child {
+  padding: 2rem 1rem 0rem;
+  background-color: #F6A51E;
   display: flex;
   flex-direction: row;
-  background-color: #dc8904;
   justify-content: space-evenly;
+  align-items: center;
+}
+footer:nth-child(2) {
+  padding: 3rem 0rem;
+  background-color: #5E3383;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+footer:nth-child(2) div {
+  padding: 0.5rem 0rem 0rem;
+  color: #fff;
+}
+footer:nth-child(3) {
+  padding: 1rem 2rem 0rem;
+  background-color: #A8C83F;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+footer:nth-child(3) div {
+  padding: 0.5rem 0rem 0rem;
+}
+footer:nth-child(3) div img {
+  height: 3rem;
+  width: auto;
 }
 
 .footer_logo {
-  height: 7vw;
-}
-
-footer img {
-  margin-top: 1vw;
-}
-
-footer a {
-  text-decoration: none;
-}
-
-.footer__contactanos {
-  height: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
+  height: 3rem;
 }
 
 .footer__contactanos a {
-  font-family: var(--fuente);
-  color: white;
-  font-size: 1rem;
+  font-family: "Roboto";
+  color: #fff;
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 0.5rem 2rem;
 }
 
 .redes {
@@ -350,20 +374,53 @@ footer a {
   width: 100%;
 }
 
-@media only screen and (max-width: 1064px) {
-  footer {
-    bottom: 0;
-    width: 100%;
+@media only screen and (min-width: 992px) {
+  footer section:first-child {
+    padding: 3rem 0rem 2rem;
+    background-color: #F6A51E;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  footer section:nth-child(2) {
+    padding: 2rem 0rem;
+    background-color: #5E3383;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  footer section:nth-child(2) div {
+    padding: 0.5rem 0rem 0rem;
+    color: #fff;
+  }
+  footer section:nth-child(3) {
+    padding: 1rem 0rem 3rem;
+    background-color: blue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  footer section:nth-child(3) div {
+    padding: 0.5rem 0rem 0rem;
+  }
+  footer section:nth-child(3) div img {
+    height: 5rem;
+    width: auto;
   }
   .footer_logo {
     height: 5rem;
   }
   .footer__contactanos a {
-    color: white;
-    font-size: 15px;
+    color: #fff;
+    font-size: 3rem;
+    width: 50%;
   }
   .redes img {
-    height: 1.5rem;
+    height: 3rem;
+    padding: 0rem 1rem;
   }
 }
 .h1_food_cats {
@@ -482,6 +539,15 @@ textarea {
   display: flex;
   align-items: center;
   flex-direction: column;
+}
+
+#donde_estamos {
+  padding: 5rem 0rem;
+}
+#donde_estamos h2 {
+  text-align: center;
+  font-size: 5rem;
+  font-weight: bold;
 }
 
 .dondeestamos img {
