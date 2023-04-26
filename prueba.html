@@ -1,78 +1,98 @@
+<div class="body">
+    <div class="empty-body"></div>
 <header>
   <nav>
-    <ul>
-      <li><a href="#">Link 1</a></li>
-      <li><a href="#">Link 2</a></li>
-      <li><a href="#">Link 3</a></li>
+    <div class="logo">
+      <a href="#">Logo</a>
+    </div>
+    <div class="menu-icon">
+      <p>X</p>
+    </div>
+    <ul class="menu">
+      <li><a href="#">Inicio</a></li>
+      <li><a href="#">Acerca de</a></li>
+      <li><a href="#">Servicios</a></li>
+      <li><a href="#">Contacto</a></li>
     </ul>
   </nav>
 </header>
-
+</div>
 <style>
-header {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-}
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .body{
+        background-color: burlywood;
+        width: 100vw;
+        height: 500rem;
+        display: block;
+    }
+    .empty-body{
+        width: 100vw;
+        height: 90vh;
+    }
 
-nav {
-  position: fixed;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-
-ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-li {
-  margin: 0 10px;
-}
-
-@media only screen and (min-width: 768px) {
-  /* Estilos para pantallas grandes */
+    a{
+        text-decoration: none;
+        color: aliceblue;
+    }
+    ul{
+        list-style: none;
+    }
+/* Estilos para pantallas grandes */
+@media screen and (min-width: 768px) {
   header {
-    position: static;
-    height: 100px; /* ajusta la altura según tus necesidades */
-  }
-
-  nav {
-    position: fixed;
-    top: 0;
-  }
-
-  ul {
-    flex-wrap: nowrap;
-    justify-content: flex-end;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
   }
+  .menu {
+    display: flex;
+    list-style: none;
+  }
+  .menu li {
+    margin-right: 20px;
+  }
+  .menu li:last-child {
+    margin-right: 0;
+  }
+  .menu-icon {
+    display: none;
+  }
 }
 
-@media only screen and (max-width: 767px) {
-  /* Estilos para pantallas pequeñas */
+/* Estilos para pantallas pequeñas */
+@media screen and (max-width: 767px) {
   header {
-    position: fixed;
-    bottom: 0;
-    height: 50px; /* ajusta la altura según tus necesidades */
-  }
-
-  nav {
-    position: static;
-  }
-
-  ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     flex-direction: column;
-    order: 2;
   }
-
-  li {
+  .menu {
+    display: none;
+    width: 100%;
+  }
+  .menu-icon {
+    display: block;
+    font-size: 30px;
+    color: #000;
+    cursor: pointer;
+  }
+  .menu-icon i {
+    display: block;
+    padding: 10px;
+    line-height: normal;
+  }
+  .menu-icon.active i:before {
+    content: "\f00d";
+  }
+  .menu.active {
+    display: flex;
+    flex-direction: column;
+  }
+  .menu li {
     margin: 10px 0;
   }
 }

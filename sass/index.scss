@@ -1,29 +1,7 @@
 @charset "UTF-8";
 
-@use "3-resets/body";
+@use "c_resets/body";
 
-@use "4-layout/header";
+@use "d_layout/header_copy";
 
-@use "4-layout/navigation";
-
-@use "4-layout/footer";
-
-@use "5-sections_&_articles/gatos_&_perros";
-
-@use "5-sections_&_articles/index_contacto";
-
-@use "5-sections_&_articles/index_donde_estamos";
-
-@use "5-sections_&_articles/index_ofertas";
-
-@use "5-sections_&_articles/index_seleccion_mascota";
-
-@use "5-sections_&_articles/servicios";
-
-@use "6-components/generate_by_javascript";
-
-@use "6-components/carousel";
-
-@use "7-transitions_&_animations/animations";
-
-@use "7-transitions_&_animations/transitions";
+@use "e_sections_and_articles/landing_page";

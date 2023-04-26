@@ -1,29 +1,29 @@
 @charset "UTF-8";
 
-@use "3-resets/body";
+@use "c_resets/body";
 
-@use "4-layout/header";
+@use "d_layout/header";
 
-@use "4-layout/navigation";
+@use "d_layout/navigation";
 
-@use "4-layout/footer";
+@use "d_layout/footer";
 
-@use "5-sections_&_articles/gatos_&_perros";
+@use "e_sections_and_articles/gatos_and_perros";
 
-@use "5-sections_&_articles/index_contacto";
+@use "e_sections_and_articles/index_contacto";
 
-@use "5-sections_&_articles/index_donde_estamos";
+@use "e_sections_and_articles/index_donde_estamos";
 
-@use "5-sections_&_articles/index_ofertas";
+@use "e_sections_and_articles/index_ofertas";
 
-@use "5-sections_&_articles/index_seleccion_mascota";
+@use "e_sections_and_articles/index_seleccion_mascota";
 
-@use "5-sections_&_articles/servicios";
+@use "e_sections_and_articles/servicios";
 
-@use "6-components/generate_by_javascript";
+@use "f_components/generate_by_javascript";
 
-@use "6-components/carousel";
+@use "f_components/carousel";
 
-@use "7-transitions_&_animations/animations";
+@use "g_transitions_and_animations/animations";
 
-@use "7-transitions_&_animations/transitions";
+@use "g_transitions_and_animations/transitions";

@@ -28,6 +28,14 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
 .videos {
   width: 100%;
 }
@@ -358,51 +366,32 @@ footer a {
     height: 1.5rem;
   }
 }
-.p_seleccionMascota {
-  font-size: 32px;
-  height: 32px;
+.h1_food_cats {
+  margin-top: 35vw;
   text-align: center;
-  margin-top: 49vw;
-  color: #212121;
+  font-family: var(--fuente);
+  font-size: 3vw;
+}
+
+.contactenos {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  color: #000;
+  font-size: 1.5rem;
   font-family: var(--fuente);
 }
 
-.main__selector {
-  display: flex;
-  width: 100%;
-  justify-content: space-evenly;
+@media only screen and (max-width: 1064px) {
+  .h1_food_cats {
+    margin-top: 30vw;
+  }
+  .contactenos {
+    text-align: center;
+    margin: 10px;
+    font-size: 3vw;
+  }
 }
-
-.main__cat {
-  height: 20vw;
-  border-radius: 50%;
-  filter: grayscale(0.3);
-}
-
-.main__dog {
-  height: 20vw;
-  border-radius: 50%;
-  filter: grayscale(0.3);
-  opacity: 0.9;
-}
-
-.img_seleccionMascota {
-  transition: all 0.3s;
-}
-
-.img_seleccionMascota:hover {
-  transform: scale(1.05);
-  filter: grayscale(0);
-  filter: brightness(1.05);
-  filter: contrast(1.2);
-}
-
-.ofertas_text_h2 {
-  margin-top: 30px;
-  text-transform: uppercase;
-  text-align: center;
-}
-
 .contactanos_container {
   display: flex;
   margin-top: 3vw;
@@ -472,6 +461,19 @@ textarea {
   width: 100%;
 }
 
+@media only screen and (max-width: 1064px) {
+  #contacto {
+    left: 0;
+    margin: 3vw;
+    width: 100%;
+  }
+  #contacto form label {
+    font-size: 12px;
+  }
+  .contactanos {
+    font-size: 15px;
+  }
+}
 .articulo_mapa {
   margin-top: 5vw;
 }
@@ -501,6 +503,24 @@ textarea {
   margin-top: 1vw;
   font-family: "Roboto", sans-serif;
   font-size: 1vw;
+}
+
+@media only screen and (max-width: 1064px) {
+  .dondeestamos img {
+    height: 150px;
+  }
+  .dondeestamos p {
+    font-size: 15px;
+  }
+  #map {
+    height: 150px;
+    width: auto;
+  }
+}
+.ofertas_text_h2 {
+  margin-top: 30px;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .gallery_containerGrid {
@@ -568,12 +588,6 @@ textarea {
   z-index: 200;
 }
 
-.cat_img-focus_img {
-  height: 80%;
-  display: block;
-  object-fit: cover;
-}
-
 .cat_img-focus_leyenda {
   position: absolute;
   font-size: 1.5vw;
@@ -589,6 +603,69 @@ textarea {
   top: 3vw;
   right: 20vw;
   cursor: pointer;
+}
+
+.cat_img-focus_img {
+  height: 80%;
+  display: block;
+  object-fit: cover;
+}
+
+@media only screen and (max-width: 1064px) {
+  .ofertas_text_h2 {
+    margin-top: 20px;
+    font-size: 15px;
+  }
+  .cat_img-focus_img {
+    height: 60%;
+  }
+  .cat_img-focus_bx-x {
+    height: 10vw;
+    top: 12vw;
+    right: 8vw;
+  }
+  .cat_img-focus_leyenda {
+    font-size: 20px;
+    bottom: 80px;
+  }
+}
+.p_seleccionMascota {
+  font-size: 32px;
+  height: 32px;
+  text-align: center;
+  margin-top: 49vw;
+  color: #212121;
+  font-family: var(--fuente);
+}
+
+.main__selector {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.main__cat {
+  height: 20vw;
+  border-radius: 50%;
+  filter: grayscale(0.3);
+}
+
+.main__dog {
+  height: 20vw;
+  border-radius: 50%;
+  filter: grayscale(0.3);
+  opacity: 0.9;
+}
+
+.img_seleccionMascota {
+  transition: all 0.3s;
+}
+
+.img_seleccionMascota:hover {
+  transform: scale(1.05);
+  filter: grayscale(0);
+  filter: brightness(1.05);
+  filter: contrast(1.2);
 }
 
 @media only screen and (max-width: 1064px) {
@@ -607,69 +684,6 @@ textarea {
     border-radius: 50%;
     opacity: 0.9;
     filter: grayscale(0);
-  }
-  .ofertas_text_h2 {
-    margin-top: 20px;
-    font-size: 15px;
-  }
-  .cat_img-focus_img {
-    height: 60%;
-  }
-  .cat_img-focus_bx-x {
-    height: 10vw;
-    top: 12vw;
-    right: 8vw;
-  }
-  .cat_img-focus_leyenda {
-    font-size: 20px;
-    bottom: 80px;
-  }
-  #contacto {
-    left: 0;
-    margin: 3vw;
-    width: 100%;
-  }
-  #contacto form label {
-    font-size: 12px;
-  }
-  .dondeestamos img {
-    height: 150px;
-  }
-  .dondeestamos p {
-    font-size: 15px;
-  }
-  #map {
-    height: 150px;
-    width: auto;
-  }
-  .contactanos {
-    font-size: 15px;
-  }
-}
-.h1_food_cats {
-  margin-top: 35vw;
-  text-align: center;
-  font-family: var(--fuente);
-  font-size: 3vw;
-}
-
-.contactenos {
-  text-align: center;
-  margin-top: 30px;
-  margin-bottom: 20px;
-  color: #000;
-  font-size: 1.5rem;
-  font-family: var(--fuente);
-}
-
-@media only screen and (max-width: 1064px) {
-  .h1_food_cats {
-    margin-top: 30vw;
-  }
-  .contactenos {
-    text-align: center;
-    margin: 10px;
-    font-size: 3vw;
   }
 }
 .lista_servicios {
