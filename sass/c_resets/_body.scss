@@ -1,8 +1,7 @@
-@use "../a_themes/colors" as color;
 @use "../a_themes/typography" as font;
 
 :root {
-    background-color: color.$white;
+    background-color: #fff;
 }
 
 *,

@@ -1,20 +1,67 @@
-//Grayscale
-$black: #000;
-$gray10: #00000081; //rgba(0, 0, 0, 0.504)
-$gray9: #23232300; //rgba(35, 35, 35, 0)
-$gray8: #212121; //rgba(33, 33, 33, 1)
-$gray7: #58585880; //rgba(88, 88, 88, 0.5)
-$gray6: #9b9b9b6f; //rgba(155, 155, 155, 0.44)
-$gray5: #ffffff50; //rgba(255, 255, 255, 0.31)
-$gray4: #969696e6; //150,150,150,0.9
-$gray3: #ffffffb3; //rgba(255, 255, 255, 0.7);
-$gray2: #ccc; //rgba(204, 204, 204, 1)
-$gray1: #f2f2f2; //rgba(242, 242, 242, 1)
-$white: #fff;
+//Escala de grises
+$black: #000;//Black
+$gray1: #111;//Almost black
+$gray2: #222;//Tinted black
+$gray3: #333;//Light black
+$gray4: #444;//Pale black
+$gray5: #555;//Dark gray
+$gray6: #666;//Shaded gray
+$gray7: #777;//Medium gray
+$gray8: #888;//Tinted gray
+$gray9: #999;//Light gray
+$gray10: #aaa;//Pale gray
+$gray11: #bbb;//Silver
+$gray12: #ccc;//Dark white
+$gray13: #ddd;//Shaded white
+$gray14: #eee;//Almost white
+$white: #fff;//White
 
 //Colores logo veterinaria
-$color1: #3AB9C8;
-$color2: #5E3383;
-$color3: #F6A51E;
-$color4: #A8C83F;
-$color5: #5E338399;
+$color1: #3AB9C8; //hsl(186, 56%, 51%)
+$color2: #5E3383; //hsl(272, 44%, 36%)
+$color3: #F6A51E; //hsl(38, 92%, 54%)
+$color4: #A8C83F; //hsl(74, 55%, 52%)
+
+
+// escala primario celeste
+$color-celeste-0: #3AB7C8; // Principal celeste*/
+$color-celeste-1: #A0E3EC;
+$color-celeste-2: #64CAD9;
+$color-celeste-3: #15A5B9;
+$color-celeste-4: #027E8F;
+
+// transparentes celeste
+$color5-celeste-4-transparente: #027E8F99;
+
+// escala primario violeta
+
+$color-violeta-0: #5E3383;	// Principal violeta*/
+$color-violeta-1: #AF96C4;
+$color-violeta-2: #7E599F;
+$color-violeta-3: #481C6E;
+$color-violeta-4: #2F0752;
+
+// transparentes violeta
+$color-verde-transparente:#5E338399;
+
+// escala primario naranja
+
+$color-naranja-0: #F6A51E;	// Principal naranja*/
+$color-naranja-1: #FFD185;
+$color-naranja-2: #FFBE52;
+$color-naranja-3: #C77D02;
+$color-naranja-4: #9A6000;
+
+// transparentes 
+$color-naranja-3-transparente: #C77D0299;
+
+// escala primario verde
+
+$color-verde-0: #A8C83F;	// Principal verde*/
+$color-verde-1: #E6F7AC;
+$color-verde-2: #CDE96F;
+$color-verde-3: #88A91D;
+$color-verde-4: #668403;
+
+// transparentes verde
+$color-verde-transparente:#66840399;

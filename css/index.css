@@ -43,21 +43,21 @@ header {
   z-index: 10;
   position: fixed;
   z-index: 999;
-  background-color: rgba(94, 51, 131, 0.6);
+  background-color: rgba(2, 126, 143, 0.6);
 }
 header section {
   display: flex;
   flex-direction: row;
-  justify-content: stretch;
+  justify-content: center;
   align-items: center;
   width: 100%;
   position: relative;
+  padding: 0.5rem;
 }
 header section section {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
-  padding: 0.5rem;
 }
 header section section div h1 {
   font-size: 1rem;
@@ -130,7 +130,6 @@ header section section div h1 p {
   position: absolute;
   top: 5.5rem;
   left: 0;
-  width: 100vw;
 }
 .menu ul li a {
   font-size: 1rem;
@@ -141,7 +140,6 @@ header section section div h1 p {
   justify-content: center;
   align-items: center;
   color: #fff;
-  width: 100vw;
 }
 .menu ul li a:hover {
   background-color: #3AB9C8;
@@ -149,12 +147,10 @@ header section section div h1 p {
 .menu ul li a div {
   padding: 0.5rem 1rem;
 }
-.menu ul li a div ::nt-child(1) {
-  width: 20vw;
+.menu ul li a div:first-child {
   justify-self: flex-end;
 }
-.menu ul li a div::nth-child(2) {
-  width: 60vw;
+.menu ul li a div:nth-child(2) {
   justify-self: flex-start;
 }
 
@@ -164,28 +160,16 @@ header section section div h1 p {
 }
 
 /* Estilos para pantallas medianas */
-/*
-@media screen and (max-width: 991px) {
-    header{
-        background-color: rgba(0,255,0,0.5);
-        position: fixed;
-        top: 0;
-    }
-
-    .menu {
-        ul {
-            top: 0;
-                li{
-                    background-color: rgba(0,255,0,0.5);
-                }
-        }
-    }
+@media screen and (min-width: 991px) {
+  header {
+    background-color: rgba(102, 132, 3, 0.6);
+  }
 }
-*/
 /* Estilos para pantallas grandes */
 @media screen and (min-width: 992px) {
   header {
     width: 100%;
+    background-color: rgba(199, 125, 2, 0.6);
   }
   header section section {
     justify-content: space-evenly;
@@ -233,13 +217,13 @@ header section section div h1 p {
     align-items: center;
     width: auto;
   }
-  .menu ul li a div ::nt-child(1) {
+  .menu ul li a div:first-child {
     width: auto;
   }
-  .menu ul li a div::nth-child(2) {
+  .menu ul li a div:nth-child(2) {
     width: auto;
   }
-  .menu ul ul:last-child {
+  .menu ul:last-child {
     padding-right: 0;
   }
 }
@@ -248,55 +232,58 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 footer section {
   width: 100%;
 }
 footer section:first-child {
-  padding: 2rem 1rem 0rem;
+  padding: 1rem;
   background-color: #F6A51E;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
 }
-footer:nth-child(2) {
-  padding: 3rem 0rem;
+footer section:first-child div span {
+  font-weight: 800;
+}
+footer section:nth-child(2) {
+  padding: 1rem 0rem;
   background-color: #5E3383;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
 }
-footer:nth-child(2) div {
+footer section:nth-child(2) div {
   padding: 0.5rem 0rem 0rem;
   color: #fff;
 }
-footer:nth-child(3) {
+footer section:nth-child(3) {
   padding: 1rem 2rem 0rem;
   background-color: #A8C83F;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
 }
-footer:nth-child(3) div {
+footer section:nth-child(3) div {
   padding: 0.5rem 0rem 0rem;
 }
-footer:nth-child(3) div img {
-  height: 3rem;
+footer section:nth-child(3) div img {
+  height: 2rem;
   width: auto;
 }
 
 .footer_logo {
-  height: 3rem;
+  height: 2rem;
 }
 
 .footer__contactanos a {
   font-family: "Roboto";
   color: #fff;
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: bold;
   text-align: center;
   padding: 0.5rem 2rem;
@@ -311,13 +298,13 @@ footer:nth-child(3) div img {
 }
 
 .redes img {
-  height: 3rem;
+  height: 2rem;
   width: 100%;
 }
 
 @media only screen and (min-width: 992px) {
   footer section:first-child {
-    padding: 3rem 0rem 2rem;
+    padding: 1rem 0rem 2rem;
     background-color: #F6A51E;
     display: flex;
     flex-direction: row;
@@ -335,20 +322,21 @@ footer:nth-child(3) div img {
   footer section:nth-child(2) div {
     padding: 0.5rem 0rem 0rem;
     color: #fff;
+    font-weight: 700;
   }
   footer section:nth-child(3) {
     padding: 1rem 0rem 3rem;
-    background-color: blue;
+    background-color: #A8C83F;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
   }
   footer section:nth-child(3) div {
-    padding: 0.5rem 0rem 0rem;
+    padding: 0.5rem 2rem 0rem;
   }
   footer section:nth-child(3) div img {
-    height: 5rem;
+    height: 3rem;
     width: auto;
   }
   .footer_logo {
@@ -381,7 +369,7 @@ footer:nth-child(3) div img {
 }
 
 .articulo_mapa {
-  margin-top: 5vw;
+  margin-top: 5rem;
 }
 
 #dondeestamos {
@@ -394,9 +382,12 @@ footer:nth-child(3) div img {
   padding: 5rem 0rem;
 }
 #donde_estamos h2 {
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  font-weight: 300;
+  color: #777;
   text-align: center;
   font-size: 5rem;
-  font-weight: bold;
 }
 
 .dondeestamos img {
@@ -405,30 +396,68 @@ footer:nth-child(3) div img {
 
 .dondeestamos__parrafo {
   font-family: "Roboto", sans-serif;
-  font-size: 2vw;
-}
-
-#map {
-  height: 20vw;
-  width: 25vw;
-  border: 0;
+  font-size: 2rem;
 }
 
 .dondeestamos__domicilio {
-  margin-top: 1vw;
+  padding: 3rem;
   font-family: "Roboto", sans-serif;
-  font-size: 1vw;
+  font-size: 1rem;
 }
 
-@media only screen and (max-width: 1064px) {
-  .dondeestamos img {
-    height: 150px;
-  }
-  .dondeestamos p {
-    font-size: 15px;
-  }
+.dondeestamos img {
+  height: 10rem;
+}
+
+.dondeestamos p {
+  font-size: 1rem;
+}
+
+#map {
+  height: 10rem;
+  width: auto;
+  border: 0;
+}
+
+@media only screen and (min-width: 992px) {
   #map {
-    height: 150px;
-    width: auto;
+    height: 20vw;
+    width: 25vw;
   }
+}
+#quienes_somos {
+  padding: 3rem;
+}
+#quienes_somos h2 {
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  font-weight: 300;
+  color: #777;
+  text-align: center;
+  padding: 0rem 0rem 3rem;
+  font-size: 6rem;
+}
+#quienes_somos div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#quienes_somos div div {
+  padding: 1rem;
+  flex-direction: column;
+}
+#quienes_somos div div img {
+  width: 30vw;
+  border-radius: 50%;
+}
+#quienes_somos div div p {
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  font-weight: 300;
+  color: #777;
+  text-align: center;
+  font-size: 2rem;
+  padding: 1rem;
+  width: 40vw;
 }/*# sourceMappingURL=index.css.map */

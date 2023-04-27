@@ -43,7 +43,7 @@ header {
   z-index: 10;
   position: fixed;
   z-index: 999;
-  background-color: rgba(94, 51, 131, 0.6);
+  background-color: rgba(2, 126, 143, 0.6);
 }
 header section {
   display: flex;
@@ -74,8 +74,6 @@ header section section div h1 p {
   padding: 0rem 0.5rem;
 }
 .logo_y_telefono div {
-  width: -webkit-max-content;
-  width: -moz-max-content;
   width: max-content;
   align-self: center;
 }
@@ -151,11 +149,11 @@ header section section div h1 p {
 .menu ul li a div {
   padding: 0.5rem 1rem;
 }
-.menu ul li a div ::nt-child(1) {
+.menu ul li a div:first-child {
   width: 20vw;
   justify-self: flex-end;
 }
-.menu ul li a div::nth-child(2) {
+.menu ul li a div:nth-child(2) {
   width: 60vw;
   justify-self: flex-start;
 }
@@ -219,8 +217,6 @@ header section section div h1 p {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
     width: fit-content;
     top: 0rem;
   }
@@ -237,13 +233,13 @@ header section section div h1 p {
     align-items: center;
     width: auto;
   }
-  .menu ul li a div ::nt-child(1) {
+  .menu ul li a div:first-child {
     width: auto;
   }
-  .menu ul li a div::nth-child(2) {
+  .menu ul li a div:nth-child(2) {
     width: auto;
   }
-  .menu ul ul:last-child {
+  .menu ul:last-child {
     padding-right: 0;
   }
 }
@@ -265,10 +261,7 @@ footer section:first-child {
   justify-content: space-evenly;
   align-items: center;
 }
-footer section:first-child div img {
-  height: 3rem;
-}
-footer section:nth-child(2) {
+footer:nth-child(2) {
   padding: 3rem 0rem;
   background-color: #5E3383;
   display: flex;
@@ -276,11 +269,11 @@ footer section:nth-child(2) {
   justify-content: space-evenly;
   align-items: center;
 }
-footer section:nth-child(2) div {
+footer:nth-child(2) div {
   padding: 0.5rem 0rem 0rem;
   color: #fff;
 }
-footer section:nth-child(3) {
+footer:nth-child(3) {
   padding: 1rem 2rem 0rem;
   background-color: #A8C83F;
   display: flex;
@@ -288,12 +281,16 @@ footer section:nth-child(3) {
   justify-content: space-evenly;
   align-items: center;
 }
-footer section:nth-child(3) div {
+footer:nth-child(3) div {
   padding: 0.5rem 0rem 0rem;
 }
-footer section:nth-child(3) div img {
+footer:nth-child(3) div img {
   height: 3rem;
   width: auto;
+}
+
+.footer_logo {
+  height: 3rem;
 }
 
 .footer__contactanos a {
@@ -320,15 +317,12 @@ footer section:nth-child(3) div img {
 
 @media only screen and (min-width: 992px) {
   footer section:first-child {
-    padding: 3rem 2rem 0rem;
+    padding: 3rem 0rem 2rem;
     background-color: #F6A51E;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-  }
-  footer section:first-child div img {
-    height: 3rem;
   }
   footer section:nth-child(2) {
     padding: 2rem 0rem;
@@ -343,7 +337,7 @@ footer section:nth-child(3) div img {
     color: #fff;
   }
   footer section:nth-child(3) {
-    padding: 1rem 3rem 0rem;
+    padding: 1rem 0rem 3rem;
     background-color: blue;
     display: flex;
     flex-direction: row;
@@ -363,9 +357,11 @@ footer section:nth-child(3) div img {
   .footer__contactanos a {
     color: #fff;
     font-size: 3rem;
+    width: 50%;
   }
   .redes img {
     height: 3rem;
+    padding: 0rem 1rem;
   }
 }
 .landing_page {
@@ -381,8 +377,7 @@ footer section:nth-child(3) div img {
   left: 0;
   height: 100%;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .articulo_mapa {
@@ -393,6 +388,15 @@ footer section:nth-child(3) div img {
   display: flex;
   align-items: center;
   flex-direction: column;
+}
+
+#donde_estamos {
+  padding: 5rem 0rem;
+}
+#donde_estamos h2 {
+  text-align: center;
+  font-size: 5rem;
+  font-weight: bold;
 }
 
 .dondeestamos img {
@@ -427,5 +431,4 @@ footer section:nth-child(3) div img {
     height: 150px;
     width: auto;
   }
-}
-/*# sourceMappingURL=index.css.map */
+}/*# sourceMappingURL=index.css.map */
