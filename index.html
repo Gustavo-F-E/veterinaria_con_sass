@@ -32,20 +32,18 @@
         <style></style>
     </head>
     <body>
-        <header>
+        <header class="header_position">
             <section>
                 <section>
-                    <div class="logo_y_telefono flex-column-centrado">
+                    <div>
                         <div>
                             <img
-                                id="logo"
                                 src="assets/images/navbar/logoasistvet.jpeg"
                                 alt="veterinaria assisvet"
                             />
                         </div>
-                        <div class="div-telefono">
+                        <div>
                             <img
-                                id="telefono"
                                 fill="#fff"
                                 src="assets/svg/icons8-phone.svg"
                                 alt="telefono"
@@ -53,7 +51,7 @@
                             <span>02254-XXXXXX</span>
                         </div>
                     </div>
-                    <div class="title">
+                    <div>
                         <div>
                             <h1>
                                 <p>PETSHOP &</p>
@@ -98,7 +96,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#"
+                                    <a href="#quienes_somos"
                                         ><div>
                                             <img
                                                 src="assets/svg/icons8-veterinarian-female-50 1.svg"
@@ -109,7 +107,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#quienes_somos"
+                                    <a href="#donde_estamos"
                                         ><div>
                                             <img
                                                 src="assets/svg/icons8-location-50 1.svg"
@@ -120,7 +118,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#donde_estamos"
+                                    <a href="#"
                                         ><div>
                                             <img
                                                 src="assets/svg/icons8-mail-48 1.svg"
@@ -142,26 +140,23 @@
             </video>
         </section>
         <main>
-            <section id="quienes_somos">
-                <a href="quienes_somos"><h2>Quienes somos</h2></a>
+            <section class="quienes_somos">
+                <div class="empty_header" id="quienes_somos"></div>
+                <h2>Quienes somos</h2>
                 <div>
-                    <div> <img src="assets/images/veterinaria/depositphotos_204322292-free-stock-photo-side-view-veterinarian-holding-dog.jpg" alt=""> </div>
+                    <div> <img src="assets/images/veterinaria/veterinary-g65d6eb90f_1280 (2).jpg" alt=""> </div>
                     <div> <p>"Somos una empresa familiar dedicada por completo al cuidado de los animales."</p> <p>"Combinamos el amor y pasión por los animales con vocación, dedicación y excelencia por la medicina veterinaria."</p> </div>
                 </div>
             </section>
-            <section id="donde_estamos">
-                <a name="donde_estamos"><h2>Donde estamos</h2></a>
-                <article class="articulo_mapa">
-                    <div class="dondeestamos" id="dondeestamos">
-                        <img
-                            src="assets/images/index/localasistvet.jpeg"
-                            alt="negocio"
-                        />
-                        <p class="dondeestamos__domicilio">
-                            Domicilio: Av. Espora 1518 <br />
-                            Localidad: Valeria del Mar <br />
-                            Provincia: Buenos Aires
-                        </p>
+            <section class="donde_estamos">
+                <div class="empty_header" id="donde_estamos"></div>
+                <h2>Donde estamos</h2>
+                <article>
+                    <div>
+                        <img src="assets/images/index/localasistvet.jpeg" alt="negocio"/>
+                        <p>Domicilio: Av. Espora 1518</p>
+                        <p>Localidad: Valeria del Mar</p>
+                        <p>Provincia: Buenos Aires</p>
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3180.4515777374318!2d-56.8971258848723!3d-37.14196057987973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959c9d11a1826da1%3A0xd88b03072107e5!2sVeterinaria%20Asistvet!5e0!3m2!1ses-419!2sar!4v1666205129439!5m2!1ses-419!2sar"
                             width="600"
@@ -170,7 +165,6 @@
                             allowfullscreen=""
                             loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade"
-                            id="map"
                         ></iframe>
                     </div>
                 </article>
@@ -246,6 +240,7 @@
                     <img src="assets/images/codo a codo/python-logo.png" alt="" />
                 </div>
             </section>
+            <section class="empty_footer"></section>
         </footer>
         <script>
             /* ********** Menu ********** */

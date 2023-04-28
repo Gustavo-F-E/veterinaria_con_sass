@@ -1,60 +1,61 @@
 @use "../a_themes/typography" as font;
 
-.articulo_mapa {
-    margin-top: 5rem;
-}
-
-#dondeestamos {
+.donde_estamos {
+    padding: 5rem 3rem 0rem;
     display: flex;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
-}
-
-#donde_estamos {
-    padding: 5rem 0rem;
     h2 {
         font-family: font.$roboto, font.$sanf-serif;
         font-style: italic;
         font-weight: 300;
         color: #777;
         text-align: center;
-        font-size: 5rem;
+        font-size: 6rem;
+        width: 100%;
+    }
+    article{
+        margin-top: 5rem;
+        div{
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            img{
+                margin: 0rem 0rem 2rem;
+                width: 40vw;
+                height: auto;
+                border-radius: 5%;
+            }
+            p{
+                font-family: "Roboto", sans-serif;
+                font-size:2rem;
+                padding: 0.5rem 0rem;
+                color: #777;
+                font-weight: 300;
+                text-align: center;
+            }
+            iframe{
+                padding: 2rem 0rem;
+                height: auto;
+                width: 40vw;
+                border: 0;
+            }
+        }
     }
 }
 
-.dondeestamos img {
-    height: 15vw;
-}
-
-.dondeestamos__parrafo {
-    font-family: "Roboto", sans-serif;
-    font-size:2rem;
-}
-
-.dondeestamos__domicilio {
-    padding: 3rem;
-    font-family: "Roboto", sans-serif;
-    font-size: 1rem;
-}
-
-.dondeestamos img {
-    height: 10rem;
-}
-
-.dondeestamos p {
-    font-size: 1rem;
-}
-
-#map {
-    height: 10rem;
-    width: auto;
-    border: 0;
-}
-
-
 @media only screen and (min-width: 992px) {
-    #map {
-        height: 20vw;
-        width: 25vw;
+    .donde_estamos {
+        article{
+            div{
+                iframe{
+                    height: 40vw;
+                    width: 40vw;
+                }
+            }
+        }
     }
 }

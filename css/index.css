@@ -40,10 +40,7 @@ ul {
 header {
   width: 100%;
   color: #fff;
-  z-index: 10;
-  position: fixed;
-  z-index: 999;
-  background-color: rgba(2, 126, 143, 0.6);
+  background-color: rgba(94, 51, 131, 0.8705882353);
 }
 header section {
   display: flex;
@@ -51,13 +48,51 @@ header section {
   justify-content: center;
   align-items: center;
   width: 100%;
-  position: relative;
-  padding: 0.5rem;
 }
 header section section {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+}
+header section section div:first-child {
+  display: flex;
+  flex-direction: column;
+  padding: 0rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header section section div:first-child div {
+  width: max-content;
+  align-self: center;
+}
+header section section div:first-child div:first-child {
+  background-color: #fff;
+  width: 8rem;
+}
+header section section div:first-child div:first-child img {
+  height: 3rem;
+  width: auto;
+}
+header section section div:first-child div:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  width: 8rem;
+}
+header section section div:first-child div:nth-child(2) img {
+  align-self: center;
+  justify-self: center;
+}
+header section section div:first-child div:nth-child(2) span {
+  padding: 0.1rem;
+  align-self: center;
+  justify-self: center;
+  font-size: 0.8rem;
+  text-align: center;
+  color: #5E3383;
 }
 header section section div h1 {
   font-size: 1rem;
@@ -67,39 +102,74 @@ header section section div h1 p {
   padding: 0.3rem 0;
 }
 
-.logo_y_telefono {
-  background-color: #fff;
-  display: flex;
-  flex-direction: column;
-  padding: 0rem 0.5rem;
+/* Estilos para pantallas medianas */
+@media screen and (min-width: 576px) {
+  header {
+    background-color: rgba(94, 51, 131, 0.8705882353);
+  }
 }
-.logo_y_telefono div {
-  width: max-content;
-  align-self: center;
+/* Estilos para pantallas grandes */
+@media screen and (min-width: 992px) {
+  header {
+    width: 100%;
+    background-color: rgba(94, 51, 131, 0.8705882353);
+  }
+  header section section {
+    justify-content: space-evenly;
+  }
+  header section section div:first-child div:first-child img {
+    height: 4.5rem;
+    width: auto;
+  }
+  header section section div:first-child div h1 {
+    margin: 0rem 3rem;
+    font-size: 1.5rem;
+    text-align: center;
+  }
 }
-
-.div-telefono {
-  display: flex;
+/* Estilos para pantallas pequeñas */
+@media all and (max-width: 575px) {
+  .header_position {
+    position: fixed;
+    z-index: 999;
+    bottom: 0;
+  }
+  .header_position section {
+    position: relative;
+  }
+  .menu ul {
+    position: absolute;
+    bottom: 4.25rem;
+    left: 0;
+    background-color: rgba(94, 51, 131, 0.8705882353);
+  }
 }
-.div-telefono span {
-  padding: 0.1rem;
-  align-self: center;
-  justify-self: center;
-  font-size: 0.8rem;
-  text-align: center;
-  color: #5E3383;
+/* Estilos para pantallas medianas */
+@media all and (min-width: 575px) {
+  .header_position {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+  }
+  .header_position section {
+    position: relative;
+  }
+  .menu ul {
+    position: absolute;
+    top: 4.25rem;
+    left: 0;
+    background-color: rgba(94, 51, 131, 0.8705882353);
+  }
 }
-
-#telefono {
-  align-self: center;
-  justify-self: center;
+/* Estilos para pantallas grandes */
+@media all and (min-width: 992px) {
+  .menu ul {
+    position: relative;
+    top: 0;
+    right: 0;
+    background-color: transparent;
+  }
 }
-
-#logo {
-  height: 3rem;
-  width: auto;
-}
-
 /* ********** Botón Menu de hamburguesa ********** */
 .menu-btn {
   border: 0;
@@ -115,7 +185,7 @@ header section section div h1 p {
   display: none;
 }
 
-/* ********** Menu  ********** */
+/* ********** Barra de navegación-Menú hamburguesa  ********** */
 .menu {
   background-color: transparent;
   opacity: 0;
@@ -127,9 +197,7 @@ header section section div h1 p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  top: 5.5rem;
-  left: 0;
+  width: 100%;
 }
 .menu ul li a {
   font-size: 1rem;
@@ -159,30 +227,7 @@ header section section div h1 p {
   pointer-events: auto;
 }
 
-/* Estilos para pantallas medianas */
-@media screen and (min-width: 991px) {
-  header {
-    background-color: rgba(102, 132, 3, 0.6);
-  }
-}
-/* Estilos para pantallas grandes */
 @media screen and (min-width: 992px) {
-  header {
-    width: 100%;
-    background-color: rgba(199, 125, 2, 0.6);
-  }
-  header section section {
-    justify-content: space-evenly;
-  }
-  header section section div h1 {
-    margin: 0rem 3rem;
-    font-size: 1.5rem;
-    text-align: center;
-  }
-  #logo {
-    height: 4.5rem;
-    width: auto;
-  }
   .menu-btn {
     display: none;
   }
@@ -196,13 +241,11 @@ header section section div h1 p {
     pointer-events: auto;
   }
   .menu ul {
-    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     width: fit-content;
-    top: 0rem;
   }
   .menu ul:hover {
     background-color: transparent;
@@ -302,6 +345,16 @@ footer section:nth-child(3) div img {
   width: 100%;
 }
 
+.empty_footer {
+  width: 100%;
+  height: 4.2rem;
+}
+
+@media all and (min-width: 575px) {
+  .empty_footer {
+    display: none;
+  }
+}
 @media only screen and (min-width: 992px) {
   footer section:first-child {
     padding: 1rem 0rem 2rem;
@@ -368,90 +421,86 @@ footer section:nth-child(3) div img {
   object-fit: cover;
 }
 
-.articulo_mapa {
-  margin-top: 5rem;
-}
-
-#dondeestamos {
+.donde_estamos {
+  padding: 5rem 3rem 0rem;
   display: flex;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-
-#donde_estamos {
-  padding: 5rem 0rem;
-}
-#donde_estamos h2 {
+.donde_estamos h2 {
   font-family: "Roboto", sans-serif;
   font-style: italic;
   font-weight: 300;
   color: #777;
   text-align: center;
-  font-size: 5rem;
+  font-size: 6rem;
+  width: 100%;
 }
-
-.dondeestamos img {
-  height: 15vw;
+.donde_estamos article {
+  margin-top: 5rem;
 }
-
-.dondeestamos__parrafo {
+.donde_estamos article div {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.donde_estamos article div img {
+  margin: 0rem 0rem 2rem;
+  width: 40vw;
+  height: auto;
+  border-radius: 5%;
+}
+.donde_estamos article div p {
   font-family: "Roboto", sans-serif;
   font-size: 2rem;
+  padding: 0.5rem 0rem;
+  color: #777;
+  font-weight: 300;
+  text-align: center;
 }
-
-.dondeestamos__domicilio {
-  padding: 3rem;
-  font-family: "Roboto", sans-serif;
-  font-size: 1rem;
-}
-
-.dondeestamos img {
-  height: 10rem;
-}
-
-.dondeestamos p {
-  font-size: 1rem;
-}
-
-#map {
-  height: 10rem;
-  width: auto;
+.donde_estamos article div iframe {
+  padding: 2rem 0rem;
+  height: auto;
+  width: 40vw;
   border: 0;
 }
 
 @media only screen and (min-width: 992px) {
-  #map {
-    height: 20vw;
-    width: 25vw;
+  .donde_estamos article div iframe {
+    height: 40vw;
+    width: 40vw;
   }
 }
-#quienes_somos {
-  padding: 3rem;
+.quienes_somos {
+  padding: 3rem 3rem 0rem;
 }
-#quienes_somos h2 {
+.quienes_somos h2 {
   font-family: "Roboto", sans-serif;
   font-style: italic;
   font-weight: 300;
   color: #777;
   text-align: center;
-  padding: 0rem 0rem 3rem;
+  width: 100%;
   font-size: 6rem;
 }
-#quienes_somos div {
+.quienes_somos div {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-#quienes_somos div div {
+.quienes_somos div div {
   padding: 1rem;
   flex-direction: column;
 }
-#quienes_somos div div img {
+.quienes_somos div div img {
   width: 30vw;
   border-radius: 50%;
 }
-#quienes_somos div div p {
+.quienes_somos div div p {
   font-family: "Roboto", sans-serif;
   font-style: italic;
   font-weight: 300;
@@ -460,4 +509,15 @@ footer section:nth-child(3) div img {
   font-size: 2rem;
   padding: 1rem;
   width: 40vw;
+}
+
+/* Estilos para pantallas medianas */
+@media all and (min-width: 992px) {
+  .quienes_somos div {
+    flex-direction: row;
+  }
+}
+.empty_header {
+  width: 100%;
+  height: 10rem;
 }/*# sourceMappingURL=index.css.map */
