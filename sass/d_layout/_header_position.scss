@@ -1,10 +1,12 @@
 /* Estilos para pantallas pequeñas */
-@media all and (max-width: 575px) {
+@media screen and (max-width: 575px) {
     .header_position {
         position: fixed;
         z-index: 999;
-        top: 95vh;
+        bottom: 0 !important;
+        left: 0;
         width: 100vw;
+        height: 5vh;
 
         section {
             position: relative;
@@ -22,7 +24,7 @@
     }
 }
 /* Estilos para pantallas medianas */
-@media all and (min-width: 576px) {
+@media all and (min-width: 576px) and (max-width: 991px) {
     .header_position {
         position: fixed;
         z-index: 999;
