@@ -3,10 +3,11 @@
     .header_position {
         position: fixed;
         z-index: 999;
-        bottom: 0 !important;
+        bottom: 0% !important;
         left: 0;
         width: 100vw;
         height: 5vh;
+        padding-top: 0%;
 
         section {
             position: relative;
