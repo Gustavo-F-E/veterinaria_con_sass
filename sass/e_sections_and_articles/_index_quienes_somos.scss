@@ -39,16 +39,35 @@
 }
 
 /* Estilos para pantallas medianas */
+@media all and (min-width: 576px) and (max-width: 991px) {
+    .quienes_somos {
+        h2 {
+            font-size: 5rem;
+        }
+        div {
+            div {
+                img {
+                    width: 55vw;
+                }
+                p {
+                    font-size: 1.8rem;
+                }
+            }
+        }
+    }
+}
+
+/* Estilos para pantallas grandes */
 @media all and (min-width: 992px) {
     .quienes_somos {
         h2 {
-            font-size: 6rem;
+            font-size: 10vh;
         }
         div {
             flex-direction: row;
             div {
                 p {
-                    font-size: 2rem;
+                    font-size: 6vh;
                 }
             }
         }

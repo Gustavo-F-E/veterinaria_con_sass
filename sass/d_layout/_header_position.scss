@@ -21,7 +21,7 @@
     .menu {
         ul {
             position: absolute;
-            top: 2.5rem;
+            bottom: 5rem;
             left: 0;
             background-color: #5e3383de;
             width: 100%;
@@ -34,15 +34,19 @@
         position: fixed;
         z-index: 999;
         top: 0;
+        width: 100vw;
+        height: 5rem;
         section {
             position: relative;
+            height: 100%;
         }
     }
     .menu {
         ul {
             position: absolute;
-            top: 4.25rem;
+            top: 5rem;
             left: 0;
+            width: 100%;
             background-color: #5e3383de;
         }
     }
@@ -50,6 +54,21 @@
 
 /* Estilos para pantallas grandes */
 @media all and (min-width: 992px) {
+    .header_position {
+        position: fixed;
+        z-index: 999;
+        top: 0;
+        width: 100vw;
+        height: 20vh;
+        section {
+            position: relative;
+            height: 100%;
+            section {
+                height: 100%;
+            }
+        }
+    }
+
     .menu {
         ul {
             position: relative;
