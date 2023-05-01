@@ -1,7 +1,7 @@
 @use "../a_themes/typography" as font;
 
 .quienes_somos {
-    padding: 3rem 3rem 0rem;
+    padding: 3rem 0rem 0rem;
     position: relative;
     h2 {
         font-family: font.$roboto, font.$sanf-serif;
@@ -11,7 +11,7 @@
         text-align: center;
         width: 100%;
         //padding: 0rem 0rem 3rem;
-        font-size: 2rem;
+        font-size: 3.4rem;
     }
     div {
         display: flex;
@@ -22,7 +22,7 @@
             padding: 1rem;
             flex-direction: column;
             img {
-                width: 30vw;
+                width: 45vw;
                 border-radius: 50%;
             }
             p {
@@ -31,9 +31,8 @@
                 font-weight: 300;
                 color: #777;
                 text-align: center;
-                font-size: 0.8rem;
-                padding: 1rem;
-                width: 40vw;
+                font-size: 1.3rem;
+                padding: 1rem 1.5rem;
             }
         }
     }
