@@ -8,6 +8,8 @@
 
 .menu-btn img {
     fill: transparent;
+    height: 1rem;
+    width: auto;
 }
 
 .none {
@@ -16,49 +18,49 @@
 
 /* ********** Barra de navegación-Menú hamburguesa  ********** */
 
-
 .menu {
     background-color: transparent;
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.5s ease;
-    
-        ul {
+
+    ul {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items:center;
-        width:100%;
-        li{
-            a{
+        align-items: center;
+        width: 100%;
+        li {
+            a {
                 font-size: 1rem;
                 font-weight: bold;
                 text-align: center;
                 display: flex;
                 flex-direction: row;
-                justify-content:center;
-                align-items:center;
+                justify-content: center;
+                align-items: center;
                 color: #fff;
                 //margin-left: 10rem;
                 //width: 100vw;
                 &:hover {
-                    background-color: #3AB9C8;
+                    background-color: #3ab9c8;
                 }
-                div{
-                    padding: 0.5rem 1rem;
-                    &:first-child{
-                        //width: 20vw;
+                div {
+                    padding: 0.5rem;
+                    &:first-child {
+                        width: 1rem;
+                        height: auto;
                         justify-self: flex-end;
                     }
-                    &:nth-child(2){
-                        //width: 60vw;
+                    &:nth-child(2) {
+                        width: 0.8rem;
+                        height: auto;
                         justify-self: flex-start;
                     }
                 }
             }
         }
     }
-
 }
 
 .menu.is-active {
@@ -67,59 +69,56 @@
 }
 
 @media screen and (min-width: 992px) {
-    
+    .menu-btn {
+        display: none;
+    }
 
-.menu-btn {
-display: none;
-}
+    .navbar {
+        width: auto;
+    }
 
-.navbar{
-    width: auto;
-
-}
-
-.menu {
-    //@at-root: static;
-    width: auto;
-    flex-direction: row;
-    opacity: 1;
-    pointer-events: auto;
-
-        ul{
-        display: flex;
+    .menu {
+        //@at-root: static;
+        width: auto;
         flex-direction: row;
-        justify-content: center;
-        align-items:center;
-        width: fit-content;
+        opacity: 1;
+        pointer-events: auto;
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            width: fit-content;
             &:hover {
-                    background-color: transparent;
+                background-color: transparent;
             }
 
-            li{
+            li {
                 //position: static;
                 color: transparent;
                 //padding: 0rem 1rem;
 
-                a{
+                a {
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
-                    align-items:center;
+                    align-items: center;
                     width: auto;
-                        div{
-                    &:first-child{
-                        width: auto;
-                    }
-                    &:nth-child(2){
-                        width: auto;
+                    div {
+                        &:first-child {
+                            width: auto;
+                        }
+                        &:nth-child(2) {
+                            width: auto;
+                        }
                     }
                 }
             }
-        }
 
-        &:last-child {
-        padding-right: 0;
+            &:last-child {
+                padding-right: 0;
+            }
         }
     }
-}
 }
