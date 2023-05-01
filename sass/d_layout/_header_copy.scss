@@ -1,5 +1,4 @@
 header {
-    width: 100%;
     color: #fff;
     background-color: #5e3383de; //#5E338399
 
@@ -8,7 +7,7 @@ header {
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        width: 100%;
+
         section {
             display: flex;
             justify-content: space-evenly;
@@ -17,13 +16,12 @@ header {
                 &:first-child {
                     display: flex;
                     flex-direction: column;
-                    padding: 0rem 0.5rem;
+                    padding: 0rem;
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
                     align-items: center;
                     div {
-                        width: max-content;
                         align-self: center;
                         &:first-child {
                             //background-color: #fff;

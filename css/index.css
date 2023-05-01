@@ -27,6 +27,7 @@ html {
 body {
   width: 100vw;
   font-family: "Roboto", sans-serif;
+  position: relative;
 }
 
 a {
@@ -38,7 +39,6 @@ ul {
 }
 
 header {
-  width: 100%;
   color: #fff;
   background-color: rgba(94, 51, 131, 0.8705882353);
 }
@@ -47,7 +47,6 @@ header section {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 100%;
 }
 header section section {
   display: flex;
@@ -57,14 +56,13 @@ header section section {
 header section section div:first-child {
   display: flex;
   flex-direction: column;
-  padding: 0rem 0.5rem;
+  padding: 0rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 header section section div:first-child div {
-  width: max-content;
   align-self: center;
   /*&:nth-child(2) {
       display: flex;
@@ -132,20 +130,23 @@ header section section div h1 p {
   .header_position {
     position: fixed;
     z-index: 999;
-    bottom: 0;
+    top: 95vh;
+    width: 100vw;
   }
   .header_position section {
     position: relative;
+    width: 100%;
   }
   .menu ul {
     position: absolute;
-    bottom: 4.25rem;
+    bottom: 2.5rem;
     left: 0;
     background-color: rgba(94, 51, 131, 0.8705882353);
+    width: 100%;
   }
 }
 /* Estilos para pantallas medianas */
-@media all and (min-width: 575px) {
+@media all and (min-width: 576px) {
   .header_position {
     position: fixed;
     z-index: 999;
@@ -197,17 +198,20 @@ header section section div h1 p {
 .menu ul {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
+}
+.menu ul li {
   width: 100%;
 }
 .menu ul li a {
-  font-size: 1rem;
+  width: 100%;
+  font-size: 0.8rem;
   font-weight: bold;
   text-align: center;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   color: #fff;
 }
@@ -218,14 +222,20 @@ header section section div h1 p {
   padding: 0.5rem;
 }
 .menu ul li a div:first-child {
-  width: 1rem;
+  width: 50%;
   height: auto;
-  justify-self: flex-end;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.menu ul li a div:first-child div img {
+  height: 0.8rem;
+  width: auto;
 }
 .menu ul li a div:nth-child(2) {
-  width: 0.8rem;
+  width: 50%;
   height: auto;
-  justify-self: flex-start;
+  text-align: left;
 }
 
 .menu.is-active {
@@ -355,7 +365,7 @@ footer section:nth-child(3) div img {
 
 .empty_footer {
   width: 100%;
-  height: 4.2rem;
+  height: 9rem;
 }
 
 @media all and (min-width: 575px) {
@@ -430,7 +440,7 @@ footer section:nth-child(3) div img {
 }
 
 .donde_estamos {
-  padding: 5rem 3rem 0rem;
+  padding: 0rem 3rem 0rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -447,7 +457,7 @@ footer section:nth-child(3) div img {
   width: 100%;
 }
 .donde_estamos article {
-  margin-top: 5rem;
+  margin-top: 1rem;
 }
 .donde_estamos article div {
   padding: 2rem;
