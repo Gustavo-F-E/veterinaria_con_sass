@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+@use "c_resets/body";
+
+@use "d_layout/header_copy";
+
+@use "d_layout/header_position";
+
+@use "d_layout/navbar";
+
+@use "d_layout/footer";
+
+@use "e_sections_and_articles/confirmacion_de_compra";
+
+@use "f_components/empty_header";
