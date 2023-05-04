@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Veterinaria AssistVet</title>
-        <link rel="stylesheet" href="css/index.css" />
+        <link rel="stylesheet" href="css/carrito_de_compras.css" />
         <link rel="icon" type="image/x-icon" href="assets/svg/footprint.svg" />
         <meta
             name="description"
@@ -136,10 +136,241 @@
         </header>
 
         <main>
-            <img
-                src="assets/images/carrito_de_compras/carrito_de_compras.png"
-                alt=""
-            />
+            <section class="carrito_de_compras">
+                <div>
+                    <h2>Seleccione sus productos</h2>
+                    <img
+                        src="assets/svg/convercion/icons8-shopping-cart-64 violet.png"
+                        alt="carrito_de_compras"
+                    />
+                </div>
+                <div>
+                    <form action="show-data.html" target="_blank">
+                        <article>
+                            <div>
+                                <a href="#">
+                                    <div>
+                                        <p>Alimento para perros</p>
+                                    </div>
+                                    <div>
+                                        <img
+                                            src="assets/svg/convercion/shop-dog 1.svg"
+                                            alt="Alimento para perros"
+                                        />
+                                    </div>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#">
+                                    <div>
+                                        <p>
+                                            Alimento <br />
+                                            para <br />
+                                            gatos
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <img
+                                            src="assets/svg/convercion/shop-cat.png"
+                                            alt="Alimento para perros"
+                                        />
+                                    </div>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#">
+                                    <div><p>Accesorios</p></div>
+                                    <div>
+                                        <img
+                                            src="assets/svg/convercion/Group 11.png"
+                                            alt="Alimento para perros"
+                                        />
+                                    </div>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#">
+                                    <div><p>Juguetes</p></div>
+                                    <div>
+                                        <img
+                                            src="assets/svg/convercion/beach-ball.png"
+                                            alt="Alimento para perros"
+                                        />
+                                    </div>
+                                </a>
+                            </div>
+                        </article>
+                        <article class="filtros">
+                            <section>
+                                <div>Tipo de producto</div>
+                                <div>
+                                    <img
+                                        class="imagen_filtro"
+                                        src="assets/svg/convercion/icons8-filter-edit-50 1.png"
+                                        alt="filtro"
+                                    />
+                                </div>
+                                <div>
+                                    <div>
+                                        <label for="tipo_de_productos"> </label>
+                                    </div>
+                                    <div>
+                                        <select
+                                            id="tipo_de_productos"
+                                            name="tipo_de_productos"
+                                        >
+                                            <option>
+                                                <div>Alimento para perros</div>
+                                            </option>
+                                            <option>
+                                                <div>Alimento para Gatos</div>
+                                            </option>
+                                            <option>
+                                                <div>Accesorios</div>
+                                            </option>
+                                            <option>
+                                                <div>Juguetes</div>
+                                            </option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </section>
+                        </article>
+                        <article class="filtros">
+                            <section>
+                                <div>Marca</div>
+                                <div>
+                                    <img
+                                        class="imagen_filtro"
+                                        src="assets/svg/convercion/icons8-filter-edit-50 1.png"
+                                        alt="filtro"
+                                    />
+                                </div>
+                                <div>
+                                    <label for="marca"> </label>
+                                    <select id="marca" name="marca">
+                                        <option>
+                                            <div>Todas</div>
+                                        </option>
+                                        <option>
+                                            <div>Royal Canning</div>
+                                        </option>
+                                        <option>
+                                            <div>Old Prince</div>
+                                        </option>
+                                        <option>
+                                            <div>Purina</div>
+                                        </option>
+                                    </select>
+                                </div>
+                            </section>
+                        </article>
+                        <article class="filtros">
+                            <section>
+                                <div>Unidad de compra</div>
+                                <div>
+                                    <img
+                                        class="imagen_filtro"
+                                        src="assets/svg/convercion/icons8-filter-edit-50 1.png"
+                                        alt="filtro"
+                                    />
+                                </div>
+                                <div>
+                                    <label for="unidad_de_compra"> </label>
+                                    <select
+                                        id="unidad_de_compra"
+                                        name="unidad_de_compra"
+                                    >
+                                        <option>
+                                            <div>1 kg</div>
+                                        </option>
+                                        <option>
+                                            <div>3kg</div>
+                                        </option>
+                                        <option>
+                                            <div>7kg</div>
+                                        </option>
+                                        <option>
+                                            <div>15 kg</div>
+                                        </option>
+                                    </select>
+                                </div>
+                            </section>
+                        </article>
+                        <article class="filtros">
+                            <section>
+                                <div>Precio unitario</div>
+                                <div>
+                                    <img
+                                        class="imagen_filtro"
+                                        src="assets/svg/convercion/icons8-filter-edit-50 1.png"
+                                        alt="filtro"
+                                    />
+                                </div>
+                                <div>
+                                    <label for="precio_unitario"> </label>
+                                    <select
+                                        id="precio_unitario"
+                                        name="precio_unitario"
+                                    >
+                                        <option>
+                                            <div>$ 18.000,00</div>
+                                        </option>
+                                        <option>
+                                            <div>$ 15.000,00</div>
+                                        </option>
+                                        <option>
+                                            <div>$ 8.000,00</div>
+                                        </option>
+                                        <option>
+                                            <div>$ 3.000,00</div>
+                                        </option>
+                                    </select>
+                                </div>
+                            </section>
+                        </article>
+                        <article class="filtros">
+                            <section>
+                                <div>
+                                    Agregar al carrito de compras<img
+                                        src="assets/svg/convercion/icons8-shopping-cart-64 (1).png"
+                                        alt="carrito de compras"
+                                    />
+                                </div>
+                                <div>
+                                    <label for="comprar"> </label>
+                                    <select id="comprar" name="comprar">
+                                        <option>
+                                            <div>SI</div>
+                                        </option>
+                                        <option>
+                                            <div>NO</div>
+                                        </option>
+                                    </select>
+                                </div>
+                            </section>
+                        </article>
+                        <article>
+                            <button type="submit">
+                                <p>Agregar al</p>
+                                <img
+                                    src="assets/svg/bx-cart.svg"
+                                    alt="carrito de compras"
+                                />
+                            </button>
+                        </article>
+                    </form>
+                </div>
+            </section>
+            <section class="resumen_carrito_de_compras">
+                <div class="titulo_resumen_carrito_de_compras">
+                    <h2>Su compra</h2>
+                    <img
+                        src="assets/svg/convercion/icons8-shopping-cart-64 violet.png"
+                        alt="carrito_de_compras"
+                    />
+                </div>
+            </section>
         </main>
         <footer>
             <section>

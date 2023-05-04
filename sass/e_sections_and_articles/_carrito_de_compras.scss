@@ -1,0 +1,148 @@
+.carrito_de_compras {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    margin: 3vh 0vh 6vh;
+    > div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        &:first-child {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            margin: 4vh 0vh;
+            h2 {
+                font-size: 1.5rem;
+                color: #5e3383;
+                font-weight: 300;
+                text-align: center;
+            }
+            img {
+                height: 1.5rem;
+                width: auto;
+            }
+        }
+        &:nth-child(2) {
+            form {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                > article {
+                    //padding: 0.2rem;
+                    &:first-child {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+                        border-color: #000;
+                        border-style: solid;
+                        border-width: 0.2rem;
+                        border-radius: 1rem 1rem 0rem 0rem;
+                        background-color: #5e3383;
+                        height: 25vh;
+                        width: 100%;
+                        div {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            height: 100%;
+                            padding: 0.3rem 0rem;
+                            a {
+                                height: 100%;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: center;
+                                color: #fff;
+                                text-align: center;
+                                font-size: 0.7rem;
+                                font-weight: 700;
+                                p {
+                                    width: 22vw;
+                                }
+                                img {
+                                    height: 1.5rem;
+                                    width: auto;
+                                    margin-top: 1rem;
+                                }
+                                &:hover {
+                                    background-color: #3ab7c8;
+                                }
+                            }
+                        }
+                    }
+                    &:last-child {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+                        border-color: #000;
+                        border-style: solid;
+                        border-width: 0rem 0.2rem 0.2rem 0.2rem;
+                        border-radius: 0rem 0rem 1rem 1rem;
+                        background-color: #3ab7c8;
+                        width: 100%;
+                        button {
+                            background-color: #198754;
+                            color: #fff;
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: center;
+                            align-items: center;
+                            border-radius: 0.2rem;
+                            margin: 0.3rem 0rem;
+                            width: 25vw;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.filtros {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-color: #000;
+    border-style: solid;
+    border-width: 0rem 0.2rem 0.2rem 0.2rem;
+    border-radius: 0rem 0rem 0rem 0rem;
+    width: 100%;
+    color: #fff;
+    font-size: 0.7rem;
+    text-align: center;
+    background-color: #666;
+    height: 25vh;
+    section {
+        width: 60%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+}
+
+.imagen_filtro {
+    width: auto;
+    height: 2rem;
+    margin-left: 3rem;
+    margin-right: 5rem;
+}
+
+.titulo_resumen_carrito_de_compras {
+    h2 {
+        font-size: 1.5rem;
+        color: #5e3383;
+        font-weight: 300;
+        text-align: center;
+    }
+}
