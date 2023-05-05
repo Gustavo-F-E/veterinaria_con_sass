@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+@use "c_resets/body";
+
+@use "d_layout/header_copy";
+
+@use "d_layout/header_position";
+
+@use "d_layout/navbar";
+
+@use "d_layout/footer";
+
+@use "e_sections_and_articles/gatos_and_perros";
+
+@use "e_sections_and_articles/index_ofertas";
+
+@use "f_components/empty_header";
+
+@use "f_components/carousel";
