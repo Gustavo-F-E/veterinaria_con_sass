@@ -1,0 +1,254 @@
+@use "../a_themes/typography" as font;
+
+.contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    margin: 10vh 10vw;
+    > div {
+        &:first-child {
+            background-color: #5e3383;
+            padding: 1rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 100%;
+            border-color: #000;
+            border-style: solid;
+            border-width: 0.2rem;
+            border-radius: 1rem 1rem 0rem 0rem;
+            h2 {
+                font-size: 2rem;
+                color: #fff;
+                text-align: center;
+            }
+            img {
+                height: 2rem;
+                width: auto;
+            }
+        }
+        &:nth-child(2) {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 100%;
+            background-color: #ccc;
+            border-color: #000;
+            border-style: solid;
+            border-width: 0rem 0.2rem 0.2rem 0.2rem;
+            form {
+                background-color: transparent;
+                border-style: none;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                margin: 1rem;
+                gap: 3vh;
+                div {
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: nowrap;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    label {
+                        padding: 2vw;
+                        font-size: 1.5rem;
+                        color: #5e3383;
+                    }
+                    input {
+                        font-size: 1.2rem;
+                        background-color: #eee;
+                        outline: none;
+                        padding: 10px 20px;
+                        border: solid 1px #481c6e;
+                        border-radius: 10px;
+                        transition: background-color 0.2s, border 0.2s,
+                            box-shadow 0.2s;
+                        color: #111;
+                        width: 90%;
+                        &:hover {
+                            background-color: #fff;
+                            border: solid 1px #eee;
+                            box-shadow: 0 0 4px #eb50ff4f;
+                            cursor: pointer;
+                        }
+                        &:focus {
+                            background-color: #fff;
+                            border: solid 0.1rem #eee;
+                            box-shadow: 0 0 0.3rem #eb50ff4f;
+                            cursor: pointer;
+                        }
+                    }
+                    textarea {
+                        width: 90%;
+                        font-size: 1.2rem;
+                        background-color: #eee;
+                        outline: none;
+                        padding: 10px 20px;
+                        border: solid 1px #481c6e;
+                        border-radius: 10px;
+                        transition: background-color 0.2s, border 0.2s,
+                            box-shadow 0.2s;
+                        color: #111;
+                        resize: vertical;
+                        &:hover {
+                            background-color: #fff;
+                            border: solid 1px #eee;
+                            box-shadow: 0 0 4px #eb50ff4f;
+                            cursor: pointer;
+                        }
+                        &:focus {
+                            background-color: #fff;
+                            border: solid 0.1rem #eee;
+                            box-shadow: 0 0 0.3rem #eb50ff4f;
+                            cursor: pointer;
+                        }
+                    }
+                    button {
+                        width: 70%;
+                        margin: 2vh 0vh;
+                        font-size: 1.5rem;
+                        background-color: #198754;
+                        outline: none;
+                        padding: 10px 20px;
+                        border: solid 1px #481c6e2e;
+                        border-radius: 10px;
+                        transition: background-color 0.2s, border 0.2s,
+                            box-shadow 0.2s;
+                        color: #ddd;
+                        font-weight: 800;
+                        &:hover {
+                            background-color: #19875484;
+                            border: solid 1px #eee;
+                            box-shadow: 0 0 4px #eb50ff4f;
+                            cursor: pointer;
+                            color: #198754;
+                        }
+                        &:focus {
+                            background-color: #19875484;
+                            border: solid 0.1rem #eee;
+                            box-shadow: 0 0 0.3rem #eb50ff4f;
+                            cursor: pointer;
+                            color: #198754;
+                        }
+                    }
+                    p {
+                        padding: 0.2rem;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+        &:nth-child(3) {
+            background-color: #027e8f;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem 0rem;
+            width: 100%;
+            border-color: #000;
+            border-style: solid;
+            border-width: 0rem 0.2rem 0.2rem 0.2rem;
+            border-radius: 0rem 0rem 1rem 1rem;
+
+            &:hover {
+                background-color: #027f8f98;
+            }
+            a {
+                text-align: center;
+                font-size: 1.2rem;
+                text-decoration: none;
+                color: #fff;
+                img {
+                    height: 1.2rem;
+                    width: auto;
+                }
+                &:hover {
+                    color: #ffffffb9;
+                }
+            }
+        }
+    }
+}
+
+#boton_radio_contacto {
+    div {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0rem 0.5rem;
+        width: 50%;
+        div {
+            padding: 0rem;
+            input {
+                width: 1.2rem;
+            }
+        }
+    }
+}
+
+//Pantallas medianas
+@media all and (min-width: 576px) and (max-width: 991px) {
+    .contacto {
+        margin-top: 20vh;
+        width: 60vw;
+        margin: 20vh 20vw;
+        > div {
+            &:first-child {
+                img {
+                    height: 3rem;
+                    width: auto;
+                }
+            }
+        }
+    }
+}
+
+//Pantallas grandes
+@media screen and (min-width: 992px) {
+    .contacto {
+        width: 50vw;
+        margin: 30vh 25vw 10vh 25vw;
+        > div {
+            &:first-child {
+                img {
+                    height: 4rem;
+                    width: auto;
+                }
+            }
+            &:nth-child(2) {
+                form {
+                    gap: 1vh;
+                    div {
+                        label {
+                            padding: 0.5vw;
+                            font-size: 1.2rem;
+                        }
+                        input {
+                            font-size: 1.2rem;
+                            padding: 10px 20px;
+                            border: solid 1px #481c6e;
+                            border-radius: 10px;
+                            transition: background-color 0.2s, border 0.2s,
+                                box-shadow 0.2s;
+                            color: #111;
+                            width: 70%;
+                        }
+                        textarea {
+                            width: 70%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -14,8 +14,11 @@
         />
         <title>Veterinaria AssistVet</title>
         <link rel="stylesheet" href="css/contacto.css" />
-        <link rel="stylesheet" href="css/index.css" />
-        <link rel="icon" type="image/x-icon" href="assets/images/navbar/logoasistvet-favicon.png" />
+        <link
+            rel="icon"
+            type="image/x-icon"
+            href="assets/images/navbar/logoasistvet-favicon.png"
+        />
         <meta
             name="description"
             content="Veterinaria AssistVet: Todo para tu mascota. Alimentos balanceados, atención médica, servicios de peluquería y mucho, mucho más!!!"
@@ -24,8 +27,11 @@
             rel="apple-touch-icon"
             href="assets/images/navbar/logoasistvet-icon.png"
         />
-        <meta name="theme-color" content="#5e3383"/>
-        <link rel="canonical" href="https://glittery-sherbet-f4dc32.netlify.app/#" />
+        <meta name="theme-color" content="#5e3383" />
+        <link
+            rel="canonical"
+            href="https://glittery-sherbet-f4dc32.netlify.app/#"
+        />
         <!--colocar direccion real cuando se haga el despliegue-->
         <meta property="og:title" content="Veterinaria AssistVet" />
         <meta
@@ -36,9 +42,12 @@
             property="og:image"
             content="assets/images/navbar/logoasistvet-png.png"
         />
-        <meta property="og:image:width" content="1200">
-        <meta property="og:image:height" content="630">
-        <meta property="og:url" content="https://glittery-sherbet-f4dc32.netlify.app/#" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta
+            property="og:url"
+            content="https://glittery-sherbet-f4dc32.netlify.app/#"
+        />
         <!--colocar direccion real cuando se haga el despliegue-->
     </head>
     <body>
@@ -155,27 +164,102 @@
             </section>
         </header>
         <main>
-            <section class="contactanos_container" id="contactanos_container">
-            <h2 class="contactanos">Contactanos</h2>
-        </section>
-        <article id="form">
-            <div id="contacto">
-                <form action="https://formspree.io/f/moqbndob" method="POST">
-                    <label for="nombre">Nombre</label>
-                    <input type="text" id="nombre" name="nombre" placeholder="Nombre..">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="email..">
-                    <label for="mascota">Mascota</label>
-                    <select id="mascota" name="mascota">
-                    <option value="gato">Gato</option>
-                    <option value="perro">Perro</option>
-                    </select>
-                    <label for="descripcion">Consulta<br></label>
-                    <textarea name="descripcion" id="descripcion" cols="30" rows="10" placeholder="Consulta.."></textarea>
-                    <input type="submit" value="Submit">
-                </form>
-            </div>
-        </article>
+            <section class="contacto">
+                <div>
+                    <h2>Contacto</h2>
+                    <img
+                        src="assets/images/navbar/logoasistvet-png.png"
+                        alt="logo assistvet"
+                    />
+                </div>
+                <div>
+                    <form action="show-data.html" target="_blank">
+                        <div>
+                            <label for="nombre_de_dueño"
+                                >Nombre y Apellido del Dueño:
+                            </label>
+                            <input
+                                size="10"
+                                type="text"
+                                name="nombre_de_dueño"
+                                placeholder="Nombre y Apellido del dueño"
+                                required
+                            />
+                        </div>
+                        <div>
+                            <label for="email-dueño"
+                                >Dirección de correo electrónico:
+                            </label>
+                            <input
+                                size="10"
+                                type="email"
+                                name="email-dueño"
+                                placeholder="Ingrese su E-Mail:"
+                                required
+                            />
+                        </div>
+                        <div>
+                            <label for="telefono_dueño"
+                                >Celular/Tel.: (*)</label
+                            >
+                            <input
+                                type="tel"
+                                name="telefono_dueño"
+                                placeholder="Ingrese su Nº de Cel./Tel.:"
+                            />
+                        </div>
+                        <div>
+                            <label for="consulta"
+                                >Consulta a su veterinario:</label
+                            >
+                            <textarea
+                                name="comentarios"
+                                placeholder="Su consulta a Assist Vet...."
+                                rows="8"
+                            ></textarea>
+                        </div>
+                        <div id="boton_radio_contacto">
+                            <label for="agendar_turno"
+                                >¿Desea agendar un turno?</label
+                            >
+                            <div>
+                                <div>
+                                    <input
+                                        type="radio"
+                                        name="agendar_turno"
+                                        value="si"
+                                        checked
+                                    />
+                                    <span>SI</span>
+                                </div>
+                                <div>
+                                    <input
+                                        type="radio"
+                                        name="agendar_turno"
+                                        value="no"
+                                    />
+                                    <span>NO</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <button type="submit">Consultar</button>
+                        </div>
+                        <div>
+                            <p>
+                                Si desea agendar un turno, un representante de
+                                Assit Vet se comunicara con Ud. a la brevedad.
+                            </p>
+                        </div>
+                    </form>
+                </div>
+                <div>
+                    <a href="index.html"
+                        >Volver al Inicio
+                        <img src="assets/svg/icons8-home.svg" alt="inicio"
+                    /></a>
+                </div>
+            </section>
         </main>
         <footer>
             <section>
