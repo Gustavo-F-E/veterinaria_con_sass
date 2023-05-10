@@ -1,7 +1,7 @@
 @use "../a_themes/typography" as font;
 
-.stock_productos{
-    margin: 10vh 0vh;
+.stock_productos {
+    padding: 10vh 5vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -13,10 +13,10 @@
     font-family: font.$roboto, font.$sanf-serif;
     margin: 5vh 0vh 3vh;
     font-style: italic;
-    font-weight: 300;
+    font-weight: 400;
     color: #777;
     text-align: center;
-    width: 100%;
+    width: 80%;
     font-size: 3.4rem;
 }
 
@@ -30,14 +30,18 @@
     padding: 2rem 0rem;
 }
 
-@media only screen and (max-width: 1064px) {
-    .h1_food_cats {
-        margin-top: 30vw;
+@media all and (min-width: 576px) {
+    .h2_food_cats {
+        padding-top: 10vh;
     }
 
     .contactenos {
-        text-align: center;
-        margin: 10px;
-        font-size: 3vw;
+        font-size: 1.8rem;
+    }
+}
+
+@media all and (min-width: 992px) {
+    .contactenos {
+        font-size: 2rem;
     }
 }

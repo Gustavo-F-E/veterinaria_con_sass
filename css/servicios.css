@@ -655,11 +655,12 @@ footer section:nth-child(3) div img {
 }
 
 #carrusel-contenido {
-  margin: 0 auto;
+  padding: 0 auto;
   overflow: hidden;
   text-align: left;
   position: absolute;
   z-index: -100;
+  width: 100%;
 }
 
 .carrusel-elemento {

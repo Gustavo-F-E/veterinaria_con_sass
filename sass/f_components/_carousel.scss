@@ -1,10 +1,5 @@
 //Carousel de imagenes
 
-
-
-
-
-
 #carrusel-caja {
     -moz-animation: automatizacion 15s infinite linear;
     -o-animation: automatizacion 15s infinite linear;
@@ -20,11 +15,12 @@
 }
 
 #carrusel-contenido {
-    margin: 0 auto;
+    padding: 0 auto;
     overflow: hidden;
     text-align: left;
     position: absolute;
     z-index: -100;
+    width: 100%;
 }
 
 .carrusel-elemento {
@@ -58,8 +54,6 @@
     float: left;
     width: 33.333%;
 }
-
-
 
 .smallscreen_carrusel-caja {
     -moz-animation: automatizacion 15s infinite linear;
