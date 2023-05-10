@@ -1,7 +1,16 @@
+@use "../a_themes/typography" as font;
+
 .ofertas_text_h2 {
-    margin-top: 30px;
+    margin: 3rem 0rem;
     text-transform: uppercase;
     text-align: center;
+    color:#777;
+    font-family: font.$roboto, font.$sanf-serif;
+    font-style: italic;
+    font-weight: 700;
+    width: 100%;
+    font-size: 3.4rem;
+
 }
 
 .gallery_containerGrid {
@@ -114,4 +123,9 @@
         font-size: 20px;
         bottom: 80px;
     }
+}
+
+.ofertas{
+    margin:10vh 0vh;
+
 }

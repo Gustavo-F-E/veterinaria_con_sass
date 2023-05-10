@@ -562,20 +562,34 @@ footer section:nth-child(3) div img {
     width: auto;
   }
 }
-.h1_food_cats {
-  margin-top: 35vw;
+.stock_productos {
+  margin: 10vh 0vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.h2_food_cats {
+  font-family: "Roboto", sans-serif;
+  margin: 5vh 0vh 3vh;
+  font-style: italic;
+  font-weight: 300;
+  color: #777;
   text-align: center;
-  font-family: var(--fuente);
-  font-size: 3vw;
+  width: 100%;
+  font-size: 3.4rem;
 }
 
 .contactenos {
   text-align: center;
-  margin-top: 30px;
-  margin-bottom: 20px;
-  color: #000;
+  margin: 2rem 0rem;
+  color: #888;
   font-size: 1.5rem;
-  font-family: var(--fuente);
+  font-family: "Roboto", sans-serif;
+  width: 70%;
+  padding: 2rem 0rem;
 }
 
 @media only screen and (max-width: 1064px) {
@@ -589,9 +603,15 @@ footer section:nth-child(3) div img {
   }
 }
 .ofertas_text_h2 {
-  margin-top: 30px;
+  margin: 3rem 0rem;
   text-transform: uppercase;
   text-align: center;
+  color: #777;
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  font-weight: 700;
+  width: 100%;
+  font-size: 3.4rem;
 }
 
 .gallery_containerGrid {
@@ -700,6 +720,100 @@ footer section:nth-child(3) div img {
     bottom: 80px;
   }
 }
+.ofertas {
+  margin: 10vh 0vh;
+}
+
+.derivador {
+  margin: 10vh 10vw;
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.derivador > div {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 0rem;
+  margin: 0.5rem 0rem;
+  background-color: #5e3383;
+  border: solid 1px #481c6e;
+  border-radius: 10px;
+  transition: background-color 0.2s, border 0.2s, box-shadow 0.2s color 0.2s;
+}
+.derivador > div:hover {
+  background-color: #af96c4;
+  border: solid 1px #eee;
+  box-shadow: 0 0 4px rgba(235, 80, 255, 0.3098039216);
+  cursor: pointer;
+}
+.derivador > div a {
+  text-align: center;
+  color: #fff;
+  font-weight: 800;
+  transition: color 0.2s;
+}
+.derivador > div a:hover {
+  color: #5e3383;
+}
+.derivador > div a img {
+  height: 1rem;
+  width: auto;
+  margin-left: 1rem;
+}
+
+.carrousel_de_perros {
+  position: relative;
+  width: 100vw;
+  height: 35vh;
+}
+
+.carrusel-contenido {
+  margin: 0 auto;
+  overflow: hidden;
+  text-align: center;
+  position: absolute;
+  z-index: -100;
+  width: 100%;
+  height: 35vh;
+}
+
+#gatos_carrusel-caja {
+  -moz-animation: gatos_automatizacion 15s infinite linear;
+  -o-animation: gatos_automatizacion 15s infinite linear;
+  -webkit-animation: gatos_automatizacion 15s infinite linear;
+  animation: gatos_automatizacion 20s infinite linear;
+  -webkit-transition: all 0.75s ease;
+  -moz-transition: all 0.75s ease;
+  -ms-transition: all 0.75s ease;
+  -o-transition: all 0.75s ease;
+  transition: all 0.75s ease;
+  height: 35vh;
+  width: 500%;
+}
+
+.gatos_carrusel-elemento {
+  float: left;
+  width: 20%;
+}
+
+.caratula {
+  height: 40vw;
+  width: auto;
+}
+
+#gatos_carrusel-contenido {
+  margin: 0 auto;
+  overflow: hidden;
+  text-align: center;
+  position: absolute;
+  z-index: -100;
+}
+
 .empty_header {
   width: 100%;
   height: 2rem;
@@ -761,33 +875,6 @@ footer section:nth-child(3) div img {
   width: 33.333%;
 }
 
-#gatos_carrusel-caja {
-  -moz-animation: gatos_automatizacion 15s infinite linear;
-  -o-animation: gatos_automatizacion 15s infinite linear;
-  -webkit-animation: gatos_automatizacion 15s infinite linear;
-  animation: gatos_automatizacion 20s infinite linear;
-  -webkit-transition: all 0.75s ease;
-  -moz-transition: all 0.75s ease;
-  -ms-transition: all 0.75s ease;
-  -o-transition: all 0.75s ease;
-  transition: all 0.75s ease;
-  height: 600px;
-  width: 500%;
-}
-
-#gatos_carrusel-contenido {
-  margin: 0 auto;
-  overflow: hidden;
-  text-align: center;
-  position: absolute;
-  z-index: -100;
-}
-
-.gatos_carrusel-elemento {
-  float: left;
-  width: 20%;
-}
-
 .smallscreen_carrusel-caja {
   -moz-animation: automatizacion 15s infinite linear;
   -o-animation: automatizacion 15s infinite linear;
@@ -821,16 +908,116 @@ footer section:nth-child(3) div img {
   width: auto;
 }
 
-.caratula {
-  height: 40vw;
-  width: auto;
-}
-
 @media only screen and (max-width: 1064px) {
   #carrusel-contenido {
     display: none;
   }
   .smallscreen_carrusel-contenido {
     display: block;
+  }
+}
+@-moz-keyframes gatos_automatizacion {
+  0% {
+    margin-left: 0;
+  }
+  17% {
+    margin-left: 0;
+  }
+  22% {
+    margin-left: -100%;
+  }
+  39% {
+    margin-left: -100%;
+  }
+  44% {
+    margin-left: -200%;
+  }
+  61% {
+    margin-left: -200%;
+  }
+  66% {
+    margin-left: -300%;
+  }
+  83% {
+    margin-left: -300%;
+  }
+  88% {
+    margin-left: -400%;
+  }
+  98% {
+    margin-left: -400%;
+  }
+  100% {
+    margin-left: 0;
+  }
+}
+@-webkit-keyframes gatos_automatizacion {
+  0% {
+    margin-left: 0;
+  }
+  17% {
+    margin-left: 0;
+  }
+  22% {
+    margin-left: -100%;
+  }
+  39% {
+    margin-left: -100%;
+  }
+  44% {
+    margin-left: -200%;
+  }
+  61% {
+    margin-left: -200%;
+  }
+  66% {
+    margin-left: -300%;
+  }
+  83% {
+    margin-left: -300%;
+  }
+  88% {
+    margin-left: -400%;
+  }
+  98% {
+    margin-left: -400%;
+  }
+  100% {
+    margin-left: 0;
+  }
+}
+@keyframes gatos_automatizacion {
+  0% {
+    margin-left: 0;
+  }
+  17% {
+    margin-left: 0;
+  }
+  22% {
+    margin-left: -100%;
+  }
+  39% {
+    margin-left: -100%;
+  }
+  44% {
+    margin-left: -200%;
+  }
+  61% {
+    margin-left: -200%;
+  }
+  66% {
+    margin-left: -300%;
+  }
+  83% {
+    margin-left: -300%;
+  }
+  88% {
+    margin-left: -400%;
+  }
+  98% {
+    margin-left: -400%;
+  }
+  100% {
+    margin-left: 0;
   }
 }/*# sourceMappingURL=productos.css.map */

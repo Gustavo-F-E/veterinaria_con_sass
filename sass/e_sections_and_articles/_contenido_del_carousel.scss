@@ -1,0 +1,47 @@
+.carrousel_de_perros{
+    position: relative;
+    width: 100vw;
+    height: 35vh;
+}
+
+.carrusel-contenido {
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: center;
+    position: absolute;
+    z-index: -100;
+    width: 100%;
+    height: 35vh;
+}
+
+#gatos_carrusel-caja {
+    -moz-animation: gatos_automatizacion 15s infinite linear;
+    -o-animation: gatos_automatizacion 15s infinite linear;
+    -webkit-animation: gatos_automatizacion 15s infinite linear;
+    animation: gatos_automatizacion 20s infinite linear;
+    -webkit-transition: all 0.75s ease;
+    -moz-transition: all 0.75s ease;
+    -ms-transition: all 0.75s ease;
+    -o-transition: all 0.75s ease;
+    transition: all 0.75s ease;
+    height: 35vh;
+    width: 500%;
+}
+
+.gatos_carrusel-elemento {
+    float: left;
+    width: 20%;
+}
+
+.caratula {
+    height: 40vw;
+    width: auto;
+}
+
+#gatos_carrusel-contenido {
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: center;
+    position: absolute;
+    z-index: -100;
+}

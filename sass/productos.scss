@@ -12,7 +12,11 @@
 
 @use "e_sections_and_articles/gatos_and_perros";
 
-@use "e_sections_and_articles/index_ofertas";
+@use "e_sections_and_articles/ofertas";
+
+@use "e_sections_and_articles/derivador";
+
+@use "e_sections_and_articles/contenido_del_carousel";
 
 @use "f_components/empty_header";
 
