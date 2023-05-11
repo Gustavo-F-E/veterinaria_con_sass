@@ -1,7 +1,7 @@
 .carrousel_de_perros {
     position: relative;
     width: 100vw;
-    height: 35vh;
+    height: 52vw;
 }
 
 .carrusel-contenido {
@@ -11,7 +11,7 @@
     position: absolute;
     z-index: -100;
     width: 100%;
-    height: 35vh;
+    height: 52vw;
 }
 
 #gatos_carrusel-caja {
@@ -24,7 +24,7 @@
     -ms-transition: all 0.75s ease;
     -o-transition: all 0.75s ease;
     transition: all 0.75s ease;
-    height: 35vh;
+    height: 52vw;
     width: 500%;
 }
 
@@ -34,8 +34,9 @@
 }
 
 .caratula {
-    height: 35vh;
-    width: auto;
+    height: 52vw;
+    width: 85vw;
+    padding: 5vh 0vh;
 }
 
 #gatos_carrusel-contenido {
