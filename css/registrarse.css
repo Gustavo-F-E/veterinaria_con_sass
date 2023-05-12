@@ -218,12 +218,16 @@ header section section div h1 p {
 .menu ul {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
 }
 .menu ul li {
   width: 100%;
   height: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .menu ul li:hover {
   background-color: #3ab9c8;
@@ -235,20 +239,20 @@ header section section div h1 p {
   justify-content: space-evenly;
   align-items: center;
   color: #fff;
-  border-bottom: 0.1px solid #5e3383;
 }
-.menu ul li a div:first-child {
+.menu ul li a > div:first-child {
   width: 50%;
   height: auto;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
 }
-.menu ul li a div:first-child div img {
+.menu ul li a > div:first-child div img {
+  padding-right: 1rem;
   height: 2.3rem;
   width: auto;
 }
-.menu ul li a div:nth-child(2) {
+.menu ul li a > div:nth-child(2) {
   width: 50%;
   height: auto;
   text-align: left;
@@ -604,21 +608,25 @@ footer section:nth-child(3) div img {
   border-width: 0rem 0.2rem 0.2rem 0.2rem;
 }
 .registrarse > div:nth-child(3) {
-  background-color: #5e3383;
+  background-color: #3ab7c8;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0.5rem 0rem;
+  padding: 1rem 0rem;
   width: 100%;
   border-color: #000;
   border-style: solid;
   border-width: 0rem 0.2rem 0.2rem 0.2rem;
   border-radius: 0rem 0rem 1rem 1rem;
 }
+.registrarse > div:nth-child(3):hover {
+  background-color: #a0e3ec;
+}
 .registrarse > div:nth-child(3) a {
   text-align: center;
   font-size: 1.2rem;
+  font-weight: 700;
   text-decoration: none;
   color: #fff;
 }
@@ -650,26 +658,28 @@ footer section:nth-child(3) div img {
   width: 70%;
   margin: 2vh 0vh;
   font-size: 1.5rem;
-  background-color: #af96c4;
+  background-color: #198754;
   outline: none;
   padding: 10px 20px;
-  border: solid 1px rgba(72, 28, 110, 0.1803921569);
+  border: solid 1px #eee;
   border-radius: 10px;
   transition: background-color 0.2s, border 0.2s, box-shadow 0.2s;
-  color: #5e3383;
+  color: #fff;
   font-weight: 800;
 }
 .formulario_de_registro > div button:hover {
-  background-color: #fff;
-  border: solid 1px #eee;
-  box-shadow: 0 0 4px rgba(235, 80, 255, 0.3098039216);
+  background-color: rgba(25, 135, 84, 0.5176470588);
+  border: solid 0.1rem #eee;
+  box-shadow: 0 0 0.1rem rgba(235, 80, 255, 0.3098039216);
   cursor: pointer;
+  color: #fff;
 }
 .formulario_de_registro > div button:focus {
-  background-color: #fff;
+  background-color: rgba(25, 135, 84, 0.5176470588);
   border: solid 0.1rem #eee;
   box-shadow: 0 0 0.3rem rgba(235, 80, 255, 0.3098039216);
   cursor: pointer;
+  color: #fff;
 }
 .formulario_de_registro > div p {
   padding: 0rem 1.5rem;
@@ -705,8 +715,8 @@ footer section:nth-child(3) div img {
   cursor: pointer;
 }
 .formulario_de_registro > div:first-child {
-  background-color: #15a5b9;
-  color: #dc3545;
+  background-color: rgba(175, 150, 196, 0.4862745098);
+  color: #dd0319;
   font-weight: 700;
   font-size: 0.8rem;
   border-bottom: #000 0.2rem solid;

@@ -218,12 +218,16 @@ header section section div h1 p {
 .menu ul {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
 }
 .menu ul li {
   width: 100%;
   height: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .menu ul li:hover {
   background-color: #3ab9c8;
@@ -235,20 +239,20 @@ header section section div h1 p {
   justify-content: space-evenly;
   align-items: center;
   color: #fff;
-  border-bottom: 0.1px solid #5e3383;
 }
-.menu ul li a div:first-child {
+.menu ul li a > div:first-child {
   width: 50%;
   height: auto;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
 }
-.menu ul li a div:first-child div img {
+.menu ul li a > div:first-child div img {
+  padding-right: 1rem;
   height: 2.3rem;
   width: auto;
 }
-.menu ul li a div:nth-child(2) {
+.menu ul li a > div:nth-child(2) {
   width: 50%;
   height: auto;
   text-align: left;
@@ -570,36 +574,36 @@ footer section:nth-child(3) div img {
   width: 100vw;
   margin: 3vh 0vh 6vh;
 }
-.carrito_de_compras > div {
+.carrito_de_compras > article {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 90%;
 }
-.carrito_de_compras > div:first-child {
+.carrito_de_compras > article:first-child {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
   margin: 4vh 0vh;
 }
-.carrito_de_compras > div:first-child h2 {
+.carrito_de_compras > article:first-child h2 {
   font-size: 1.5rem;
   color: #5e3383;
-  font-weight: 300;
+  font-weight: 700;
   text-align: center;
 }
-.carrito_de_compras > div:first-child img {
-  height: 1.5rem;
-  width: auto;
+.carrito_de_compras > article:first-child h2 span {
+  font-style: italic;
+  font-weight: 300;
 }
-.carrito_de_compras > div:nth-child(2) form {
+.carrito_de_compras > article:nth-child(2) form {
   display: flex;
   flex-direction: column;
   width: 100%;
 }
-.carrito_de_compras > div:nth-child(2) form > article:first-child {
+.carrito_de_compras > article:nth-child(2) form > section:first-child {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -609,92 +613,231 @@ footer section:nth-child(3) div img {
   border-width: 0.2rem;
   border-radius: 1rem 1rem 0rem 0rem;
   background-color: #5e3383;
-  height: 25vh;
   width: 100%;
 }
-.carrito_de_compras > div:nth-child(2) form > article:first-child div {
+.carrito_de_compras > article:nth-child(2) form > section:first-child div {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  height: 100%;
-  padding: 0.3rem 0rem;
+  padding: 0.5rem 0rem;
 }
-.carrito_de_compras > div:nth-child(2) form > article:first-child div a {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.carrito_de_compras > article:nth-child(2) form > section:first-child div:first-child {
+  width: 70%;
+}
+.carrito_de_compras > article:nth-child(2) form > section:first-child div:first-child h2 {
   color: #fff;
+  font-size: 1.5rem;
   text-align: center;
-  font-size: 0.7rem;
-  font-weight: 700;
 }
-.carrito_de_compras > div:nth-child(2) form > article:first-child div a p {
-  width: 22vw;
-}
-.carrito_de_compras > div:nth-child(2) form > article:first-child div a img {
-  height: 1.5rem;
+.carrito_de_compras > article:nth-child(2) form > section:first-child div:first-child img {
+  height: 2.5rem;
   width: auto;
-  margin-top: 1rem;
 }
-.carrito_de_compras > div:nth-child(2) form > article:first-child div a:hover {
-  background-color: #3ab7c8;
+.carrito_de_compras > article:nth-child(2) form > section:first-child div:last-child {
+  width: 30%;
 }
-.carrito_de_compras > div:nth-child(2) form > article:last-child {
+.carrito_de_compras > article:nth-child(2) form > section:first-child div:last-child img {
+  height: 2.5rem;
+  width: auto;
+}
+.carrito_de_compras > article:nth-child(2) form > section:nth-child(2), .carrito_de_compras > article:nth-child(2) form > section:nth-child(4), .carrito_de_compras > article:nth-child(2) form > section:nth-child(6), .carrito_de_compras > article:nth-child(2) form > section:nth-child(8) {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  border-color: #000;
+  border-style: solid;
+  border-width: 0rem 0.2rem 0.2rem;
+  background-color: rgba(94, 51, 131, 0.168627451);
+  width: 100%;
+  padding: 0.5rem 0rem;
+}
+.carrito_de_compras > article:nth-child(2) form > section:nth-child(2) div:first-child, .carrito_de_compras > article:nth-child(2) form > section:nth-child(4) div:first-child, .carrito_de_compras > article:nth-child(2) form > section:nth-child(6) div:first-child, .carrito_de_compras > article:nth-child(2) form > section:nth-child(8) div:first-child {
+  color: #5e3383;
+  font-size: 1rem;
+  font-weight: 600;
+  width: 50%;
+  text-align: center;
+}
+.carrito_de_compras > article:nth-child(2) form > section:nth-child(2) div:last-child, .carrito_de_compras > article:nth-child(2) form > section:nth-child(4) div:last-child, .carrito_de_compras > article:nth-child(2) form > section:nth-child(6) div:last-child, .carrito_de_compras > article:nth-child(2) form > section:nth-child(8) div:last-child {
+  width: 50%;
+}
+.carrito_de_compras > article:nth-child(2) form > section:nth-child(2) div:last-child select, .carrito_de_compras > article:nth-child(2) form > section:nth-child(4) div:last-child select, .carrito_de_compras > article:nth-child(2) form > section:nth-child(6) div:last-child select, .carrito_de_compras > article:nth-child(2) form > section:nth-child(8) div:last-child select {
+  width: 80%;
+  padding: 0.3rem;
+  border-color: #5e3383;
+  border-radius: 0.2rem;
+  color: #5e3383;
+  font-style: italic;
+  outline: none;
+}
+.carrito_de_compras > article:nth-child(2) form > section:nth-child(2) div:last-child select option, .carrito_de_compras > article:nth-child(2) form > section:nth-child(4) div:last-child select option, .carrito_de_compras > article:nth-child(2) form > section:nth-child(6) div:last-child select option, .carrito_de_compras > article:nth-child(2) form > section:nth-child(8) div:last-child select option {
+  border-color: #5e3383;
+  border-radius: 0.2rem;
+}
+.carrito_de_compras > article:nth-child(2) form > section:nth-child(2) div:last-child select option:hover, .carrito_de_compras > article:nth-child(2) form > section:nth-child(4) div:last-child select option:hover, .carrito_de_compras > article:nth-child(2) form > section:nth-child(6) div:last-child select option:hover, .carrito_de_compras > article:nth-child(2) form > section:nth-child(8) div:last-child select option:hover {
+  color: #fff;
+  background-color: #5e3383;
+}
+.carrito_de_compras > article:nth-child(2) form > section:nth-child(3), .carrito_de_compras > article:nth-child(2) form > section:nth-child(5), .carrito_de_compras > article:nth-child(2) form > section:nth-child(7) {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  border-color: #000;
+  border-style: solid;
+  border-width: 0rem 0.2rem 0.2rem;
+  background-color: rgba(94, 51, 131, 0.5843137255);
+  width: 100%;
+  padding: 0.5rem 0rem;
+}
+.carrito_de_compras > article:nth-child(2) form > section:nth-child(3) div:first-child, .carrito_de_compras > article:nth-child(2) form > section:nth-child(5) div:first-child, .carrito_de_compras > article:nth-child(2) form > section:nth-child(7) div:first-child {
+  color: #5e3383;
+  font-size: 1rem;
+  font-weight: 600;
+  width: 50%;
+  text-align: center;
+}
+.carrito_de_compras > article:nth-child(2) form > section:nth-child(3) div:last-child, .carrito_de_compras > article:nth-child(2) form > section:nth-child(5) div:last-child, .carrito_de_compras > article:nth-child(2) form > section:nth-child(7) div:last-child {
+  width: 50%;
+}
+.carrito_de_compras > article:nth-child(2) form > section:nth-child(3) div:last-child select, .carrito_de_compras > article:nth-child(2) form > section:nth-child(5) div:last-child select, .carrito_de_compras > article:nth-child(2) form > section:nth-child(7) div:last-child select {
+  width: 80%;
+  padding: 0.3rem;
+  border-color: #5e3383;
+  border-radius: 0.2rem;
+  color: #5e3383;
+  font-style: italic;
+  outline: none;
+}
+.carrito_de_compras > article:nth-child(2) form > section:nth-child(3) div:last-child select option, .carrito_de_compras > article:nth-child(2) form > section:nth-child(5) div:last-child select option, .carrito_de_compras > article:nth-child(2) form > section:nth-child(7) div:last-child select option {
+  border-color: #5e3383;
+  border-radius: 0.2rem;
+}
+.carrito_de_compras > article:nth-child(2) form > section:nth-child(3) div:last-child select option:hover, .carrito_de_compras > article:nth-child(2) form > section:nth-child(5) div:last-child select option:hover, .carrito_de_compras > article:nth-child(2) form > section:nth-child(7) div:last-child select option:hover {
+  color: #fff;
+  background-color: #5e3383;
+}
+.carrito_de_compras > article:nth-child(2) form > section:last-child {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   border-color: #000;
   border-style: solid;
-  border-width: 0rem 0.2rem 0.2rem 0.2rem;
+  border-width: 0rem 0.2rem 0.2rem;
   border-radius: 0rem 0rem 1rem 1rem;
   background-color: #3ab7c8;
   width: 100%;
-}
-.carrito_de_compras > div:nth-child(2) form > article:last-child button {
-  background-color: #198754;
-  color: #fff;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  border-radius: 0.2rem;
-  margin: 0.3rem 0rem;
-  width: 25vw;
+}
+.carrito_de_compras > article:nth-child(2) form > section:last-child:hover {
+  background-color: rgba(58, 183, 200, 0.2784313725);
+}
+.carrito_de_compras > article:nth-child(2) form > section:last-child h2 {
+  color: #fff;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.carrito_de_compras > article:nth-child(2) form > section:last-child img {
+  height: 2.5rem;
+  width: auto;
 }
 
-.filtros {
+.listado_de_productos {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  width: 100%;
+}
+.listado_de_productos > article {
   border-color: #000;
   border-style: solid;
-  border-width: 0rem 0.2rem 0.2rem 0.2rem;
-  border-radius: 0rem 0rem 0rem 0rem;
+  border-width: 0rem 0.2rem 0.2rem;
+  padding: 0.5rem 0rem;
   width: 100%;
-  color: #fff;
-  font-size: 0.7rem;
-  text-align: center;
-  background-color: #666;
-  height: 25vh;
-}
-.filtros section {
-  width: 60%;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
 }
+.listado_de_productos > article:nth-child(odd) {
+  background-color: rgba(94, 51, 131, 0.5843137255);
+}
+.listado_de_productos > article:nth-child(even) {
+  background-color: rgba(94, 51, 131, 0.168627451);
+}
+.listado_de_productos > article > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.listado_de_productos > article > div:first-child {
+  width: 40%;
+}
+.listado_de_productos > article > div:first-child img {
+  width: 35vw;
+  height: auto;
+}
+.listado_de_productos > article > div:last-child {
+  width: 60%;
+}
+.listado_de_productos > article > div:last-child > div {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0.3rem 0rem;
+  color: #5e3383;
+}
+.listado_de_productos > article > div:last-child > div > span:first-child {
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+.listado_de_productos > article > div:last-child > div > span:last-child {
+  font-size: 0.8rem;
+  font-weight: 300;
+  font-style: italic;
+}
 
-.imagen_filtro {
-  width: auto;
-  height: 2rem;
-  margin-left: 3rem;
-  margin-right: 5rem;
+.agregar_quitar_carrito {
+  width: 90%;
+  height: 2.5rem !important;
+}
+.agregar_quitar_carrito span {
+  font-size: 1.5rem !important;
+  text-align: center;
+}
+.agregar_quitar_carrito span:first-child {
+  width: 20%;
+  background-color: #dc3545;
+  color: #fff;
+  border-color: #000;
+  border-style: solid;
+  border-width: 0.1rem;
+  border-radius: 0.2rem 0rem 0rem 0.2rem;
+}
+.agregar_quitar_carrito span:nth-child(2) {
+  width: 20%;
+  background-color: #ddd;
+  color: #5e3383;
+  border-color: #000;
+  border-style: solid;
+  border-width: 0.1rem 0rem;
+  border-radius: 0rem;
+}
+.agregar_quitar_carrito span:last-child {
+  width: 20%;
+  background-color: #198754;
+  color: #fff;
+  border-color: #000;
+  border-style: solid;
+  border-width: 0.1rem;
+  border-radius: 0rem 0.2rem 0.2rem 0rem;
 }
 
 /* Estilos para pantallas medianas */

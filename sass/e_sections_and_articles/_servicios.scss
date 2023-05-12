@@ -22,7 +22,7 @@
 
 .calendario {
     position: relative;
-    height: auto;
+    height: 60vw;
     width: 80vw;
 }
 
@@ -35,37 +35,4 @@
     color: #777;
     text-align: center;
     padding-bottom: 3vh;
-}
-
-@media only screen and (min-width: 992px) {
-    .lista_servicios {
-        text-align: center;
-        position: relative;
-        margin-top: 30vw;
-        list-style-type: none;
-    }
-
-    .servicios {
-        margin: 1vw;
-        /* text-align: center; */
-        font-size: 2rem;
-    }
-
-    .calendario {
-        position: relative;
-        height: 50vw;
-    }
-
-    .lorem {
-        font-size: 1rem;
-    }
-
-    .calendario {
-        position: relative;
-        height: 40vw;
-    }
-
-    .lorem {
-        font-size: 1rem;
-    }
 }

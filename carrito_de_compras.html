@@ -149,85 +149,35 @@
 
         <main>
             <section class="carrito_de_compras">
-                <div>
-                    <h2>Seleccione sus productos</h2>
-                    <img
+                <article>
+                    <h2>¡¡¡Bienvenido <span>nombre_de_usuario</span> !!!</h2>
+                    <!--img
                         src="assets/svg/convercion/icons8-shopping-cart-64 violet.png"
                         alt="carrito_de_compras"
-                    />
-                </div>
-                <div>
+                    /-->
+                </article>
+                <article>
                     <form action="show-data.html" target="_blank">
-                        <article>
+                        <section>
                             <div>
-                                <a href="#">
-                                    <div>
-                                        <p>Alimento para perros</p>
-                                    </div>
-                                    <div>
-                                        <img
-                                            src="assets/svg/convercion/shop-dog 1.svg"
-                                            alt="Alimento para perros"
-                                        />
-                                    </div>
-                                </a>
+                                <h2>Seleccione su/s producto/s</h2>
+                                <img
+                                src="assets/svg/bx-cart.svg"
+                                alt="carrito_de_compras"
+                                />
                             </div>
-                            <div>
-                                <a href="#">
-                                    <div>
-                                        <p>
-                                            Alimento <br />
-                                            para <br />
-                                            gatos
-                                        </p>
-                                    </div>
-                                    <div>
-                                        <img
-                                            src="assets/svg/convercion/shop-cat.png"
-                                            alt="Alimento para perros"
-                                        />
-                                    </div>
-                                </a>
-                            </div>
-                            <div>
-                                <a href="#">
-                                    <div><p>Accesorios</p></div>
-                                    <div>
-                                        <img
-                                            src="assets/svg/convercion/Group 11.png"
-                                            alt="Alimento para perros"
-                                        />
-                                    </div>
-                                </a>
-                            </div>
-                            <div>
-                                <a href="#">
-                                    <div><p>Juguetes</p></div>
-                                    <div>
-                                        <img
-                                            src="assets/svg/convercion/beach-ball.png"
-                                            alt="Alimento para perros"
-                                        />
-                                    </div>
-                                </a>
-                            </div>
-                        </article>
-                        <article class="filtros">
-                            <section>
-                                <div>Tipo de producto</div>
+                            <div><img
+                            src="assets/images/navbar/logoasistvet-png.png"
+                            alt="logo Asist Vet"
+                            /></div>
+                        </section>
+                        <!--Tipo de Producto-->
+                        <section>
                                 <div>
-                                    <img
-                                        class="imagen_filtro"
-                                        src="assets/svg/convercion/icons8-filter-edit-50 1.png"
-                                        alt="filtro"
-                                    />
+                                    Tipo de producto
                                 </div>
                                 <div>
-                                    <div>
-                                        <label for="tipo_de_productos"> </label>
-                                    </div>
-                                    <div>
-                                        <select
+                                    <select
                                             id="tipo_de_productos"
                                             name="tipo_de_productos"
                                         >
@@ -243,136 +193,216 @@
                                             <option>
                                                 <div>Juguetes</div>
                                             </option>
-                                        </select>
+                                    </select>
+                                </div>
+                        </section>
+                        <!--Marca-->
+                        <section>
+                                <div>
+                                    Marca
+                                </div>
+                                <div>
+                                    <select
+                                            id="marca"
+                                            name="marca"
+                                        >
+                                            <option>
+                                                <div>Royal canning</div>
+                                            </option>
+                                            <option>
+                                                <div>Old Prince</div>
+                                            </option>
+                                            <option>
+                                                <div>Mainteinance Criadores</div>
+                                            </option>
+                                            <option>
+                                                <div>Purina</div>
+                                            </option>
+                                    </select>
+                                </div>
+                        </section>
+                        <!--Unidad de compra-->
+                        <section>
+                                <div>
+                                    Unidad de Compra
+                                </div>
+                                <div>
+                                    <select
+                                            id="unidad_de_compra"
+                                            name="unidad_de_compra"
+                                        >
+                                            <option>
+                                                <div>1 kg</div>
+                                            </option>
+                                            <option>
+                                                <div>3 kg</div>
+                                            </option>
+                                            <option>
+                                                <div>7 kg</div>
+                                            </option>
+                                            <option>
+                                                <div>15 kg</div>
+                                            </option>
+                                    </select>
+                                </div>
+                        </section>
+                        <!--Peso del Animal-->
+                        <section>
+                                <div>
+                                    Peso del animal
+                                </div>
+                                <div>
+                                    <select
+                                            id="peso_animal"
+                                            name="peso_animal"
+                                        >
+                                            <option>
+                                                <div>Menor a 10 kg</div>
+                                            </option>
+                                            <option>
+                                                <div>Entre 10 y 20 kg</div>
+                                            </option>
+                                            <option>
+                                                <div>Mayor a 30 kg</div>
+                                            </option>
+                                    </select>
+                                </div>
+                        </section>
+                        <!--Edad-->
+                        <section>
+                                <div>
+                                    Edad
+                                </div>
+                                <div>
+                                    <select
+                                            id="edad_animal"
+                                            name="edad_animal"
+                                        >
+                                            <option>
+                                                <div>Cachorro</div>
+                                            </option>
+                                            <option>
+                                                <div>Adulto</div>
+                                            </option>
+                                    </select>
+                                </div>
+                        </section>
+                        <!--En Oferta-->
+                        <section>
+                                <div>
+                                    En oferta
+                                </div>
+                                <div>
+                                    <select
+                                            id="unidad_de_compra"
+                                            name="unidad_de_compra"
+                                        >
+                                            <option>
+                                                <div>Sí</div>
+                                            </option>
+                                            <option>
+                                                <div>No</div>
+                                            </option>
+                                    </select>
+                                </div>
+                        </section>
+                        <!--Ordenar x precio-->
+                        <section>
+                                <div>
+                                    Ordenar por Precio
+                                </div>
+                                <div>
+                                    <select
+                                            id="orden_precio"
+                                            name="orden_precio"
+                                        >
+                                            <option>
+                                                <div>De Mayor a Menor</div>
+                                            </option>
+                                            <option>
+                                                <div>De Menor a Mayor</div>
+                                            </option>
+                                    </select>
+                                </div>
+                        </section>
+                        <!--Listado de productos-->
+                        <section class="listado_de_productos">
+                            <article>
+                                <div><img src="assets/images/alimentos_perros/old-prince-cordero-removebg-preview.png" alt="old prince"></div>
+                                <div>
+                                    <div><span>Marca:  </span>
+                                        <span>Old Prince</span>
+                                    </div>
+                                    <div>
+                                        <span>Cantidad:  </span>
+                                        <span>1 kg</span>
+                                    </div>
+                                    <div>
+                                        <span>Peso:  </span>
+                                        <span>Menor a 10 kg</span>
+                                    </div>
+                                    <div>
+                                        <span>Edad:  </span>
+                                        <span>Adulto</span>
+                                    </div>
+                                    <div>
+                                        <span>En oferta:  </span>
+                                        <span>20%</span>
+                                    </div>
+                                    <div>
+                                        <span>Precio:  </span>
+                                        <span>$3.000,00</span>
+                                    </div>
+                                    <div class="agregar_quitar_carrito">
+                                        <span>-</span>
+                                        <span>2</span>
+                                        <span>+</span>
                                     </div>
                                 </div>
-                            </section>
-                        </article>
-                        <article class="filtros">
-                            <section>
-                                <div>Marca</div>
+                            </article>
+                            <article>
+                                <div><img src="assets/images/alimentos_perros/7790187340602_01-removebg-preview.png" alt="old prince"></div>
                                 <div>
-                                    <img
-                                        class="imagen_filtro"
-                                        src="assets/svg/convercion/icons8-filter-edit-50 1.png"
-                                        alt="filtro"
-                                    />
+                                    <div><span>Marca:  </span>
+                                        <span>Royal Canning</span>
+                                    </div>
+                                    <div>
+                                        <span>Cantidad:  </span>
+                                        <span>1 kg</span>
+                                    </div>
+                                    <div>
+                                        <span>Peso:  </span>
+                                        <span>Menor a 10 kg</span>
+                                    </div>
+                                    <div>
+                                        <span>Edad:  </span>
+                                        <span>Adulto</span>
+                                    </div>
+                                    <div>
+                                        <span>En oferta:  </span>
+                                        <span>30%</span>
+                                    </div>
+                                    <div>
+                                        <span>Precio:  </span>
+                                        <span>$6.000,00</span>
+                                    </div>
+                                    <div class="agregar_quitar_carrito">
+                                        <span>-</span>
+                                        <span>0</span>
+                                        <span>+</span>
+                                    </div>
                                 </div>
-                                <div>
-                                    <label for="marca"> </label>
-                                    <select id="marca" name="marca">
-                                        <option>
-                                            <div>Todas</div>
-                                        </option>
-                                        <option>
-                                            <div>Royal Canning</div>
-                                        </option>
-                                        <option>
-                                            <div>Old Prince</div>
-                                        </option>
-                                        <option>
-                                            <div>Purina</div>
-                                        </option>
-                                    </select>
-                                </div>
-                            </section>
-                        </article>
-                        <article class="filtros">
-                            <section>
-                                <div>Unidad de compra</div>
-                                <div>
-                                    <img
-                                        class="imagen_filtro"
-                                        src="assets/svg/convercion/icons8-filter-edit-50 1.png"
-                                        alt="filtro"
-                                    />
-                                </div>
-                                <div>
-                                    <label for="unidad_de_compra"> </label>
-                                    <select
-                                        id="unidad_de_compra"
-                                        name="unidad_de_compra"
-                                    >
-                                        <option>
-                                            <div>1 kg</div>
-                                        </option>
-                                        <option>
-                                            <div>3kg</div>
-                                        </option>
-                                        <option>
-                                            <div>7kg</div>
-                                        </option>
-                                        <option>
-                                            <div>15 kg</div>
-                                        </option>
-                                    </select>
-                                </div>
-                            </section>
-                        </article>
-                        <article class="filtros">
-                            <section>
-                                <div>Precio unitario</div>
-                                <div>
-                                    <img
-                                        class="imagen_filtro"
-                                        src="assets/svg/convercion/icons8-filter-edit-50 1.png"
-                                        alt="filtro"
-                                    />
-                                </div>
-                                <div>
-                                    <label for="precio_unitario"> </label>
-                                    <select
-                                        id="precio_unitario"
-                                        name="precio_unitario"
-                                    >
-                                        <option>
-                                            <div>$ 18.000,00</div>
-                                        </option>
-                                        <option>
-                                            <div>$ 15.000,00</div>
-                                        </option>
-                                        <option>
-                                            <div>$ 8.000,00</div>
-                                        </option>
-                                        <option>
-                                            <div>$ 3.000,00</div>
-                                        </option>
-                                    </select>
-                                </div>
-                            </section>
-                        </article>
-                        <article class="filtros">
-                            <section>
-                                <div>
-                                    Agregar al carrito de compras<img
-                                        src="assets/svg/convercion/icons8-shopping-cart-64 (1).png"
-                                        alt="carrito de compras"
-                                    />
-                                </div>
-                                <div>
-                                    <label for="comprar"> </label>
-                                    <select id="comprar" name="comprar">
-                                        <option>
-                                            <div>SI</div>
-                                        </option>
-                                        <option>
-                                            <div>NO</div>
-                                        </option>
-                                    </select>
-                                </div>
-                            </section>
-                        </article>
-                        <article>
-                            <button type="submit">
-                                <p>Agregar al</p>
+                            </article>
+                        </section>
+                        <section>
+                                <h2>Volver al Inicio</h2>
                                 <img
-                                    src="assets/svg/bx-cart.svg"
-                                    alt="carrito de compras"
+                                src="assets/svg/bx-cart.svg"
+                                alt="carrito_de_compras"
                                 />
-                            </button>
-                        </article>
+                        </section>
                     </form>
-                </div>
+                </article>
             </section>
             <section class="resumen_carrito_de_compras">
                 <div class="titulo_resumen_carrito_de_compras">
