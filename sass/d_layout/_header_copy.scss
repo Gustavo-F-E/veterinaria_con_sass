@@ -32,11 +32,18 @@ header {
                         }
                     }
                 }
-                h1 {
-                    font-size: 1rem;
-                    text-align: center;
-                    p {
-                        padding: 0.2rem 0;
+                &:nth-child(2){
+                    div{
+                        h1 {
+                        font-size: 1rem;
+                        text-align: center;
+                            a{
+                                p {
+                                padding: 0.2rem 0;
+                                color: #fff;
+                            }
+                        }
+                        }
                     }
                 }
             }
@@ -68,10 +75,15 @@ header {
                                     width: auto;
                                 }
                             }
+                            &:nth-child(2){
+                                div{
+                                    h1 {
+                                    font-size: 1.8rem;
+                                    }
+                                }
+                            }
                         }
-                        h1 {
-                            font-size: 1.6rem;
-                        }
+                        
                     }
                 }
             }
@@ -103,10 +115,14 @@ header {
                                 }
                             }
                         }
-                        h1 {
+                    }
+                    &:nth-child(2){
+                        div{
+                            h1 {
                             margin: 0rem 3rem;
-                            font-size: 4.8vh;
+                            font-size: 1.5rem;
                             text-align: center;
+                            }
                         }
                     }
                 }

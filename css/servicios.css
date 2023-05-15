@@ -69,12 +69,13 @@ header section section div:first-child div:first-child img {
   height: 3rem;
   width: auto;
 }
-header section section div h1 {
+header section section div:nth-child(2) div h1 {
   font-size: 1rem;
   text-align: center;
 }
-header section section div h1 p {
+header section section div:nth-child(2) div h1 a p {
   padding: 0.2rem 0;
+  color: #fff;
 }
 
 /* Estilos para pantallas medianas */
@@ -95,8 +96,8 @@ header section section div h1 p {
     height: 4.5rem;
     width: auto;
   }
-  header section section div:first-child h1 {
-    font-size: 1.6rem;
+  header section section div:first-child div:nth-child(2) div h1 {
+    font-size: 1.8rem;
   }
 }
 /* Estilos para pantallas grandes */
@@ -119,9 +120,9 @@ header section section div h1 p {
     height: 13vh;
     width: auto;
   }
-  header section section div:first-child h1 {
+  header section section div:nth-child(2) div h1 {
     margin: 0rem 3rem;
-    font-size: 4.8vh;
+    font-size: 1.5rem;
     text-align: center;
   }
 }
